@@ -8,3 +8,4 @@ public class Constants {
     public static final String DRIVER_PATH = "src/main/resources/chromedriver.exe";
     public static final String LOGIN_PAGE_URL = "https://telescope.epam.com/";
 }
+
