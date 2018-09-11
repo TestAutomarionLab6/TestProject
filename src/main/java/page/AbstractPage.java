@@ -17,7 +17,6 @@ import static java.time.Duration.ofSeconds;
 public abstract class AbstractPage {
     private WebDriver driver;
 
-
     public AbstractPage() {
         driver = DriverManager.getDriver();
         DriverManager.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

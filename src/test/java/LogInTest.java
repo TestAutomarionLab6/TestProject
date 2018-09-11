@@ -5,8 +5,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class LogInTest {
-
-
     private LoginPageBo loginPageBo;
 
     @BeforeTest
@@ -18,7 +16,6 @@ public class LogInTest {
     public void logInTest() {
         loginPageBo.logIn("login", "password");
     }
-
 
     @AfterTest
     public void quit() {
