@@ -2,6 +2,7 @@ package com.epam.lab.page;
 
 import com.epam.lab.core.decorator.CustomFieldDecorator;
 import com.epam.lab.core.driver.DriverManager;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -25,6 +26,7 @@ public abstract class AbstractPage {
         PageFactory.initElements(new CustomFieldDecorator(new DefaultElementLocatorFactory(driver)), this);
     }
 
+    @Step("AbstractPage Step: Wait for element: {0} (Fluent Wait)...")
     public void waitElement(WebElement webElement) {
         Wait wait = new FluentWait(driver).withTimeout(ofSeconds(20)).pollingEvery(ofSeconds(3));
         wait.until(ExpectedConditions.visibilityOf(webElement));

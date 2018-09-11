@@ -2,128 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e23ac64-dc2d-422c-9b6e-7aab5fadd364" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure2_model_api_1_0_BETA6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure2_model_jackson_1_0_BETA6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure2_model_pojo_1_0_BETA6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_descriptions_javadoc_2_0_BETA19.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_0_BETA19.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_testng_2_0_BETA19.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tika_tika_core_1_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jooq_joor_0_9_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_14_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/1a46c3d5-52c2-41ea-8bbe-a6993f3fda60-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/372fd9ac-a0bb-4eef-b92d-35c4cfe933fc-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/3f9ad952-e2f3-44a6-bbd1-a0749c5783f6-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/41acefd1-5a83-4086-8d9e-dd0348bc6c43-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/4b0bdba3-937b-4053-b3f0-bfebd09925b5-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/4c9e48d9-f910-498e-a316-4309a3019d31-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/4df404fd-8af0-4177-8be5-3874d11ca77d-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/83a79876-600c-459b-ac33-d4ecf6454e10-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/917ac3e5-49f5-4686-900b-0d5765f4c3f9-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/9cd0fd5f-9741-42d6-81f6-5ad6c4ad2050-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/cc6f6db8-d2c0-4fbb-a9f6-c74473399de2-container.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/ff66f0d8-6c83-4afd-b7a5-173d0e8f2113-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/decorator/CustomFieldDecorator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/driver/DriverManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElementListHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/chromedriver" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/business/LoginPageBo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/core/decorator/CustomFieldDecorator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/core/driver/DriverManager.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/core/pageElement/PageElement.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/core/pageElement/PageElementListHandler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/core/util/Constants.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/page/AbstractPage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/page/LoginPagePo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/testng.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite/LoginTest.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite/LoginTest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.epam.lab.LogInTest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/LoginTest.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/classes.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/groups.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/main.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods-alphabetical.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods-not-run.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/reporter-output.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/testng.xml.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/toc.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/lab/LogInTest.class" />
-      <change beforePath="$PROJECT_DIR$/InternalProject.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/InternalProject.iml" afterPath="$PROJECT_DIR$/InternalProject.iml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/business/LoginPageBo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/decorator/CustomFieldDecorator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/driver/DriverManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/pageElement/PageElement.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/pageElement/PageElementListHandler.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/util/Constants.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page/AbstractPage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page/LoginPagePo.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LogInTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/lab/business/LoginPageBo.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/business/LoginPageBo.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/lab/core/pageElement/PageElement.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/core/pageElement/PageElement.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/lab/page/AbstractPage.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/page/AbstractPage.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/lab/page/LoginPagePo.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/lab/page/LoginPagePo.class" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite/LoginTest.html" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite/LoginTest.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite/LoginTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite/LoginTest.xml" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.epam.lab.LogInTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.epam.lab.LogInTest.xml" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/classes.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/classes.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/main.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/main.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods-alphabetical.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods-not-run.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods-not-run.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/methods.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/toc.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/TestSuite/toc.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/lab/LogInTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/lab/LogInTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,29 +58,47 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="InternalProject" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="LogInTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="616">
+              <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPageBo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java">
+      <file leaf-file-name="TestListener.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/reportListeners/TestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="114">
+              <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DriverManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/driver/DriverManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,26 +106,9 @@
       <file leaf-file-name="LoginPagePo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding>
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="25" column="86" lean-forward="false" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,18 +116,8 @@
       <file leaf-file-name="AbstractPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="191">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -210,57 +126,64 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="286">
+              <caret line="55" column="48" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InternalProject.iml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InternalProject.iml">
+      <file leaf-file-name="LoginPageBo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Internal.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Internal.iml">
+      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogInTest.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/test-classes/com/epam/lab/LogInTest.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="-352">
+              <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
               <folding>
-                <marker date="1536510182281" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1536510182281" expanded="false" signature="136:446" ph="..." />
-                <marker date="1536510182281" expanded="true" signature="534:541" ph="{}" />
-                <marker date="1536510182281" expanded="true" signature="547:613" ph="@{...}" />
-                <marker date="1536510182281" expanded="false" signature="637:648" ph=" { " />
-                <marker date="1536510182281" expanded="false" signature="685:691" ph=" }" />
-                <marker date="1536510182281" expanded="true" signature="697:813" ph="@{...}" />
-                <marker date="1536510182281" expanded="false" signature="841:852" ph=" { " />
-                <marker date="1536510182281" expanded="false" signature="896:902" ph=" }" />
-                <marker date="1536510182281" expanded="true" signature="908:956" ph="@{...}" />
-                <marker date="1536510182281" expanded="false" signature="979:990" ph=" { " />
-                <marker date="1536510182281" expanded="false" signature="1019:1025" ph=" }" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PageElementListHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElementListHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomFieldDecorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/decorator/CustomFieldDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -278,10 +201,17 @@
         <option value="$PROJECT_DIR$/src/test/java/LogInTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/TestNG.xml" />
         <option value="$PROJECT_DIR$/src/main/java/business/LoginPageBo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LogInTest1.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/TestListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/reportListeners/TestListener.java" />
       </list>
     </option>
   </component>
@@ -298,7 +228,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -329,6 +259,109 @@
             <path>
               <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="reportListeners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InternalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -640,36 +673,71 @@
       <configuration name="LogInTest (1)" configurationId="TestNG" />
     </history-entry>
   </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2523148" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33564815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39467594" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25725028" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25725028" sideWeight="0.49303135" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25725028" sideWeight="0.5069686" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -684,10 +752,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -705,9 +772,9 @@
         <state relative-caret-position="286">
           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,8 +784,8 @@
         <state relative-caret-position="396">
           <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,18 +819,18 @@
         <state relative-caret-position="352">
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
-            <marker date="1536510182281" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1536510182281" expanded="false" signature="136:446" ph="..." />
-            <marker date="1536510182281" expanded="true" signature="534:541" ph="{}" />
-            <marker date="1536510182281" expanded="true" signature="547:613" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="637:648" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="685:691" ph=" }" />
-            <marker date="1536510182281" expanded="true" signature="697:813" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="841:852" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="896:902" ph=" }" />
-            <marker date="1536510182281" expanded="true" signature="908:956" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="979:990" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="1019:1025" ph=" }" />
+            <marker date="1536647106644" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1536647106644" expanded="false" signature="136:225" ph="..." />
+            <marker date="1536647106644" expanded="true" signature="534:541" ph="{}" />
+            <marker date="1536647106644" expanded="true" signature="547:613" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="637:648" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="685:691" ph=" }" />
+            <marker date="1536647106644" expanded="true" signature="697:937" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="1229:1238" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="1282:1288" ph=" }" />
+            <marker date="1536647106644" expanded="true" signature="1294:1342" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="1365:1376" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="1405:1411" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -773,10 +840,9 @@
         <state relative-caret-position="88">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -794,9 +860,9 @@
         <state relative-caret-position="220">
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -813,6 +879,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -829,18 +898,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1536510182281" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1536510182281" expanded="false" signature="136:446" ph="..." />
-            <marker date="1536510182281" expanded="true" signature="534:541" ph="{}" />
-            <marker date="1536510182281" expanded="true" signature="547:613" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="637:648" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="685:691" ph=" }" />
-            <marker date="1536510182281" expanded="true" signature="697:813" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="841:852" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="896:902" ph=" }" />
-            <marker date="1536510182281" expanded="true" signature="908:956" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="979:990" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="1019:1025" ph=" }" />
+            <marker date="1536647106644" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1536647106644" expanded="false" signature="136:225" ph="..." />
+            <marker date="1536647106644" expanded="true" signature="534:541" ph="{}" />
+            <marker date="1536647106644" expanded="true" signature="547:613" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="637:648" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="685:691" ph=" }" />
+            <marker date="1536647106644" expanded="true" signature="697:937" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="1229:1238" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="1282:1288" ph=" }" />
+            <marker date="1536647106644" expanded="true" signature="1294:1342" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="1365:1376" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="1405:1411" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -854,13 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/driver/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TOP SECRET DONT OPEN.txt" />
     <entry file="file://$PROJECT_DIR$/allure-results/eef0d5c1-505a-4b3b-ad6f-742671cc2e11-container.json" />
     <entry file="file://$PROJECT_DIR$/allure-results/adf5a04f-cbd5-4d61-a59b-6e45859bc669-container.json" />
@@ -869,22 +931,6 @@
     <entry file="file://$PROJECT_DIR$/allure-results/404147f4-5a92-443e-b8b7-49d89633839d-container.json" />
     <entry file="file://$PROJECT_DIR$/allure-results/7e8397c2-1050-49a7-b0b5-7e7954b66f06-container.json" />
     <entry file="file://$PROJECT_DIR$/allure-results/0b378e6d-e062-4676-95bb-2b46af3d78f9-result.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allure-results/b3a20a9b-2a5c-49e1-97f0-6bdcc1d01fe5-container.json" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/emailable-report.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,55 +941,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/allure-results/2b561160-f673-445c-823f-422e777bbf90-container.json" />
     <entry file="file://$PROJECT_DIR$/allure-results/1e13b993-f181-4cbc-984e-71ccceaf68b6-container.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml" />
     <entry file="file://$PROJECT_DIR$/target/test-classes/com/epam/lab/LogInTest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
-            <marker date="1536510182281" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1536510182281" expanded="false" signature="136:446" ph="..." />
-            <marker date="1536510182281" expanded="true" signature="534:541" ph="{}" />
-            <marker date="1536510182281" expanded="true" signature="547:613" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="637:648" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="685:691" ph=" }" />
-            <marker date="1536510182281" expanded="true" signature="697:813" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="841:852" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="896:902" ph=" }" />
-            <marker date="1536510182281" expanded="true" signature="908:956" ph="@{...}" />
-            <marker date="1536510182281" expanded="false" signature="979:990" ph=" { " />
-            <marker date="1536510182281" expanded="false" signature="1019:1025" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
+            <marker date="1536647106644" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1536647106644" expanded="false" signature="136:225" ph="..." />
+            <marker date="1536647106644" expanded="true" signature="534:541" ph="{}" />
+            <marker date="1536647106644" expanded="true" signature="547:613" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="637:648" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="685:691" ph=" }" />
+            <marker date="1536647106644" expanded="true" signature="697:937" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="1229:1238" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="1282:1288" ph=" }" />
+            <marker date="1536647106644" expanded="true" signature="1294:1342" ph="@{...}" />
+            <marker date="1536647106644" expanded="false" signature="1365:1376" ph=" { " />
+            <marker date="1536647106644" expanded="false" signature="1405:1411" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -952,27 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,6 +982,131 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LogInTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/decorator/CustomFieldDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+          <folding>
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/pageElement/PageElementListHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/business/LoginPageBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/page/LoginPagePo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="86" lean-forward="false" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="55" column="48" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/driver/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/page/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/lab/LogInTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/lab/core/util/reportListeners/TestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
