@@ -1,8 +1,0 @@
-com\epam\lab\page\LoginPagePo.class
-com\epam\lab\business\LoginPageBo.class
-com\epam\lab\page\AbstractPage.class
-com\epam\lab\core\pageElement\PageElement.class
-com\epam\lab\core\util\Constants.class
-com\epam\lab\core\driver\DriverManager.class
-com\epam\lab\core\pageElement\PageElementListHandler.class
-com\epam\lab\core\decorator\CustomFieldDecorator.class
