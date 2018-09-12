@@ -43,7 +43,7 @@ This is a path to the credentials: TestProject-develop\src\main\resources
 
 ### Allure
 
-- [Allure](http://allure.qatools.ru/) 6.11
+- [Allure](http://allure.qatools.ru/) 2.0-BETA19
 
 ### Log4j
 
