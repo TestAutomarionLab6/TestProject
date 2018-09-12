@@ -1,3 +1,4 @@
-﻿.idea/
-Internal.iml/
-InternalProject.iml/
+.idea/*
+*.iml
+target/*
+allure-results/*
