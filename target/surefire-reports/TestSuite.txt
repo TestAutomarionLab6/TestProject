@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.956 s <<< FAILURE! - in TestSuite
-logInTest(com.epam.lab.LogInTest)  Time elapsed: 1.257 s  <<< FAILURE!
-java.lang.AssertionError: expected [123] but found []
-	at com.epam.lab.LogInTest.logInTest(LogInTest.java:31)
-
