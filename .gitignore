@@ -1,4 +1,5 @@
-﻿.idea/*
-*.impl
-allure-result/*
+.idea/*
+*.iml
 target/*
+allure-results/*
+
