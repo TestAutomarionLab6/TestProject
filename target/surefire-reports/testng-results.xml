@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="7628" started-at="2018-09-11T06:25:22Z" finished-at="2018-09-11T06:25:29Z">
+  <suite name="TestSuite" duration-ms="9240" started-at="2018-09-12T10:01:27Z" finished-at="2018-09-12T10:01:36Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="7628" started-at="2018-09-11T06:25:22Z" finished-at="2018-09-11T06:25:29Z">
+    <test name="LoginTest" duration-ms="9240" started-at="2018-09-12T10:01:27Z" finished-at="2018-09-12T10:01:36Z">
       <class name="com.epam.lab.LogInTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.epam.lab.LogInTest@379ab47b]" name="setup" is-config="true" duration-ms="4180" started-at="2018-09-11T09:25:22Z" finished-at="2018-09-11T09:25:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.epam.lab.LogInTest@7a138fc5]" name="setup" is-config="true" duration-ms="6864" started-at="2018-09-12T13:01:27Z" finished-at="2018-09-12T13:01:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="logInTest()[pri:0, instance:com.epam.lab.LogInTest@379ab47b]" name="logInTest" duration-ms="638" started-at="2018-09-11T09:25:26Z" description="Invalid LogInTest Scenario with wrong username and password" finished-at="2018-09-11T09:25:27Z">
+        <test-method status="FAIL" signature="logInTest()[pri:0, instance:com.epam.lab.LogInTest@7a138fc5]" name="logInTest" duration-ms="519" started-at="2018-09-12T13:01:34Z" description="Invalid LogInTest Scenario with wrong username and password" finished-at="2018-09-12T13:01:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [123] but found []]]>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.epam.lab.LogInTest@379ab47b]" name="quit" is-config="true" duration-ms="1358" started-at="2018-09-11T09:25:28Z" finished-at="2018-09-11T09:25:29Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.epam.lab.LogInTest@7a138fc5]" name="quit" is-config="true" duration-ms="815" started-at="2018-09-12T13:01:35Z" finished-at="2018-09-12T13:01:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

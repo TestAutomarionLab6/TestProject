@@ -13,18 +13,15 @@ public class LoginPagePo extends AbstractPage {
     private PageElement submitButton;
 
 
-    @Step("PageElementPO Step: Enter login: {0} in login input field in method: {enterLogin}...")
-    public void enterLogin(String login) {
-        loginField.sendKeys(login);
+    public PageElement getLoginField() {
+        return loginField;
     }
 
-    @Step("PageElementPO Step: Enter password: {0} in password input field in method: {enterPassword}...")
-    public void enterPassword(String password) {
-        passwordField.sendKeys(password);
+    public PageElement getPasswordField() {
+        return passwordField;
     }
 
-    @Step("PageElementPO Step: Submit login form in login page in method: {clickSubmit}...")
-    public void clickSubmit() {
-        submitButton.click();
+    public PageElement getSubmitButton() {
+        return submitButton;
     }
 }

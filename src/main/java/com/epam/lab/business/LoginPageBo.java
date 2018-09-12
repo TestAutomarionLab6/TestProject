@@ -17,8 +17,23 @@ public class LoginPageBo {
 
     @Step("LoginPageBO with login: {0}, password: {1} for method: {logIn} step...")
     public void logIn(String login, String password) {
-        loginPagePo.enterLogin(login);
-        loginPagePo.enterPassword(password);
-        loginPagePo.clickSubmit();
+        enterLogin(login);
+        enterPassword(password);
+        clickSubmit();
+    }
+
+    @Step("PageElementBO Step: Enter login: {0} in login input field in method: {enterLogin}...")
+    private void enterLogin(String login) {
+        loginPagePo.getLoginField().sendKeys(login);
+    }
+
+    @Step("PageElementBO Step: Enter password: {0} in password input field in method: {enterPassword}...")
+    private void enterPassword(String password) {
+        loginPagePo.getPasswordField().sendKeys(password);
+    }
+
+    @Step("PageElementPO Step: Submit login form in login page in method: {clickSubmit}...")
+    private void clickSubmit() {
+        loginPagePo.getSubmitButton().click();
     }
 }
