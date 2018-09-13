@@ -32,7 +32,7 @@ public class LoginPageBo {
         loginPagePo.getPasswordField().sendKeys(password);
     }
 
-    @Step("PageElementPO Step: Submit login form in login page in method: {clickSubmit}...")
+    @Step("PageElementBO Step: Submit login form in login page in method: {clickSubmit}...")
     public void clickSubmit() {
         loginPagePo.getSubmitButton().click();
     }
