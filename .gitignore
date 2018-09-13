@@ -1,6 +1,6 @@
-.idea
+.idea/*
 *.iml
-target
-allure-results
-
+target/*
+allure-results/*
+README
 
