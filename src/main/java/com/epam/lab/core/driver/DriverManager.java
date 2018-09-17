@@ -1,8 +1,10 @@
 package com.epam.lab.core.driver;
 
-import com.epam.lab.core.util.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static com.epam.lab.core.util.Constants.DRIVER;
+import static com.epam.lab.core.util.Constants.DRIVER_PATH;
 
 public class DriverManager {
 
@@ -10,7 +12,7 @@ public class DriverManager {
      * Initialize driver
      */
     private static ThreadLocal<WebDriver> driver = ThreadLocal.withInitial(() -> {
-        System.setProperty(Constants.DRIVER, Constants.DRIVER_PATH_WIN);
+        System.setProperty(DRIVER, DRIVER_PATH);
         return new ChromeDriver();
     });
 

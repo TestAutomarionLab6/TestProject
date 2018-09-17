@@ -1,4 +1,4 @@
-package core.util;
+package com.epam.lab.core.util;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
