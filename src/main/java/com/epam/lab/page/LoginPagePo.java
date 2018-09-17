@@ -2,6 +2,7 @@ package com.epam.lab.page;
 
 import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.LogMessage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPagePo extends AbstractPage {
@@ -15,15 +16,16 @@ public class LoginPagePo extends AbstractPage {
     @FindBy(id = "submitButton")
     private PageElement submitButton;
 
-    public void enterLogin(String login) {
-        loginField.sendKeys(login);
+
+    public PageElement getLoginField() {
+        return loginField;
     }
 
-    public void enterPassword(String password) {
-        passwordField.sendKeys(password);
+    public PageElement getPasswordField() {
+        return passwordField;
     }
 
-    public void clickSubmit() {
-        submitButton.click();
+    public PageElement getSubmitButton() {
+        return submitButton;
     }
 }

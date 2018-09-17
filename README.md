@@ -1,3 +1,4 @@
+
 # TESTING TELESCOPE
 > This is a internal project for UI, API and integration testing Testscope. All UI tests are running on Chrome browser.
 
@@ -48,3 +49,4 @@ This is a path to the credentials: TestProject-develop\src\main\resources
 ### Log4j
 
 - [Log4j](http://logging.apache.org/log4j/1.2/) 1.2.17
+
