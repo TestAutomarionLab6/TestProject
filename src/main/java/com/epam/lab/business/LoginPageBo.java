@@ -78,7 +78,6 @@ public class LoginPageBo {
     @Step("PageElementBO Step: get href attribute for link...")
     public String  hrefLink() {
     	return loginPagePo.getLink().getAttribute("href");    	
-    }
-    
+    }   
    
 }
