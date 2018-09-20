@@ -23,21 +23,61 @@ public class LoginPageBo {
     public void logIn(String login, String password) {
         enterLogin(login);
         enterPassword(password);
+        keepMeSignedIn();
         clickSubmit();
     }
 
     @Step("PageElementBO Step: Enter login: {0} in login input field in method: {enterLogin}...")
     public void enterLogin(String login) {
+    	loginPagePo.getLoginField().clear();
         loginPagePo.getLoginField().sendKeys(login);
     }
 
     @Step("PageElementBO Step: Enter password: {0} in password input field in method: {enterPassword}...")
     public void enterPassword(String password) {
+    	loginPagePo.getPasswordField().clear();
         loginPagePo.getPasswordField().sendKeys(password);
     }
-
+         
     @Step("PageElementBO Step: Submit login form in login page in method: {clickSubmit}...")
     public void clickSubmit() {
-        loginPagePo.getSubmitButton().click();
+        loginPagePo.getSubmitButton().click();        
     }
+    
+    @Step("PageElementBO Step: click on checkbox Keep me logged in system...")
+    public void keepMeSignedIn() {
+        loginPagePo.getKeepMeSignedIn().click();        
+    }
+    
+    @Step("PageElementBO Step: logout...")
+    public void logout() {
+        loginPagePo.getDropDownMenu().click();
+        loginPagePo.getLogout().click();
+    }
+    
+    @Step("PageElementBO Step: click on link password.epam.com...")
+    public void  passwordEpamComLink() {
+        loginPagePo.getPasswordEpamComLink().click();        
+    }
+    
+    @Step("PageElementBO Step: go back...")
+    public void  goBack() {
+    	DriverManager.getDriver().navigate().back();        
+    }
+    
+    @Step("PageElementBO Step: go to Privacy Policy link...")
+    public void  privacyPolicyLink() {
+    	loginPagePo.getPrivacyPolicyLink().click();       
+    }    
+    
+    @Step("PageElementBO Step: go to Self Service link...")
+    public void  selfServiceLink() {
+    	loginPagePo.getSelfServiceLink().click();       
+    }    
+    
+    @Step("PageElementBO Step: get href attribute for link...")
+    public String  hrefLink() {
+    	return loginPagePo.getLink().getAttribute("href");    	
+    }   
+   
 }
