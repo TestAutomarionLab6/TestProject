@@ -2,6 +2,7 @@ package com.epam.lab.business;
 
 import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.util.MyLogger;
+import com.epam.lab.page.HomePagePo;
 import org.apache.log4j.Level;
 import com.epam.lab.page.LoginPagePo;
 import io.qameta.allure.Step;
@@ -11,9 +12,11 @@ import static com.epam.lab.core.util.Constants.LOGIN_PAGE_URL;
 public class LoginPageBo {
 
     private LoginPagePo loginPagePo;
+    private HomePagePo homePagePo;
 
     public LoginPageBo() {
         loginPagePo = new LoginPagePo();
+        homePagePo = new HomePagePo();
         DriverManager.getDriver().get(LOGIN_PAGE_URL);
         MyLogger myLogger = new MyLogger();
         myLogger.setLevel(Level.INFO);
@@ -51,8 +54,8 @@ public class LoginPageBo {
     
     @Step("PageElementBO Step: logout...")
     public void logout() {
-        loginPagePo.getDropDownMenu().click();
-        loginPagePo.getLogout().click();
+        homePagePo.getDropDownMenu().click();
+        homePagePo.getLogout().click();
     }
     
     @Step("PageElementBO Step: click on link password.epam.com...")
