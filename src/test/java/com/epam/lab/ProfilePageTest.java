@@ -12,7 +12,7 @@ import org.testng.annotations.Listeners;
 import static com.epam.lab.core.util.Constants.CSV_PATH;
 
 @Listeners({ TestListener.class })
-public class ProfilePageTest {
+public class ProfilePageTest implements ITestNGListener {
 
     private LoginPageBo loginPageBo;
     private ProfilePageBo profilePageBo;
