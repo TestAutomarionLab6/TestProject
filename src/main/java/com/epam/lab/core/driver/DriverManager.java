@@ -2,11 +2,16 @@ package com.epam.lab.core.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.ArrayList;
 
 import static com.epam.lab.core.util.Constants.DRIVER;
 import static com.epam.lab.core.util.Constants.DRIVER_PATH;
+import static com.epam.lab.core.util.Constants.TIME_FOR_WAITING;
 
 public class DriverManager {
+
 
     /**
      * Initialize driver
@@ -34,5 +39,15 @@ public class DriverManager {
     public static void removeDriver() {
         driver.get().quit();
         driver.remove();
+    }
+
+    public static WebDriverWait newWait () {
+        return new WebDriverWait(getDriver(), TIME_FOR_WAITING);
+    }
+
+    public static void switchToWindow(int windowNumber)
+    {
+        ArrayList tabs = new ArrayList(getDriver().getWindowHandles());
+        getDriver().switchTo().window(tabs.get(windowNumber).toString());
     }
 }
