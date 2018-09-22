@@ -1,12 +1,17 @@
 package com.epam.lab.core.pageElement;
 
+import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.util.MyLogger;
 import org.apache.log4j.Logger;
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static com.epam.lab.core.driver.DriverManager.newWait;
 
 public class PageElement implements WebElement {
 
@@ -123,6 +128,13 @@ public class PageElement implements WebElement {
     public void tagShouldBeEqualTo(String tag) {
         if (!getText().contains(tag)) {
         }
+    }
+
+    @Step("PageElement Step: Wait until visible element ...")
+    public PageElement waitUntilVisible() {
+        LOG.info("Wait until visible element [" + this.name + "]");
+        newWait().until(ExpectedConditions.visibilityOf(this));
+        return this;
     }
 }
 
