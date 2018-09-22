@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import static com.epam.lab.core.util.Constants.DRIVER;
 import static com.epam.lab.core.util.Constants.DRIVER_PATH;
-import static com.epam.lab.core.util.Constants.TIME_FOR_WAITING;
+import static com.epam.lab.core.util.Constants.WAITING_TIME;
 
 public class DriverManager {
 
@@ -42,7 +42,7 @@ public class DriverManager {
     }
 
     public static WebDriverWait newWait () {
-        return new WebDriverWait(getDriver(), TIME_FOR_WAITING);
+        return new WebDriverWait(getDriver(), WAITING_TIME);
     }
 
     public static void switchToWindow(int windowNumber)
