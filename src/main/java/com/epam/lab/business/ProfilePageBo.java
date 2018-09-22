@@ -19,10 +19,10 @@ public class ProfilePageBo {
         myLogger.setLevel(Level.INFO);
     }
 
-    @Step("PageElementBO Step: Verify Wall button...")
-    public void verifyWallButton() {
-        if(profilePagePo.getWallButton().isDisplayed()) {
-            profilePagePo.getWallButton().click();
+    @Step("PageElementBO Step: Verify Profile button...")
+    public void verifyProfileButton() {
+        if(profilePagePo.getProfileButton().isDisplayed()) {
+            profilePagePo.getProfileButton().click();
         }
     }
 

@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProfilePagePo extends AbstractPage {
 
-        @LogMessage("Wall button")
-        @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-wallview.wfep\"]")
-        private PageElement wallButton;
+        @LogMessage("Profile button")
+        @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-informers.wfep\"]")
+        private PageElement profileButton;
 
-        public PageElement getWallButton() {
-            return wallButton;
+        public PageElement getProfileButton() {
+            return profileButton;
         }
 }

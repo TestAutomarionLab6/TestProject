@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.core.util.Constants.CSV_PATH;
-import static com.epam.lab.core.util.Constants.PROFILE_PAGE_WALL_URL;
+import static com.epam.lab.core.util.Constants.PROFILE_PAGE_PROFILE_URL;
 
 @Listeners({ TestListener.class })
 public class ProfilePageTest implements ITestNGListener {
@@ -37,13 +37,13 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo = new ProfilePageBo();
     }
 
-    @Test(priority = 0, description = "Verify if button Wall is active")
-    @Description("ProfileTest Description: Verify if button Wall is active")
+    @Test(priority = 0, description = "Verify if button Profile is active")
+    @Description("ProfileTest Description: Verify if button Profile is active")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyWallButton() {
-        profilePageBo.verifyWallButton();
+    public void verifyProfileButton() {
+        profilePageBo.verifyProfileButton();
         SoftAssert softAssertion= new SoftAssert();
-        softAssertion.assertEquals(DriverManager.getDriver().getCurrentUrl(), PROFILE_PAGE_WALL_URL);
+        softAssertion.assertEquals(DriverManager.getDriver().getCurrentUrl(), PROFILE_PAGE_PROFILE_URL);
     }
 
     @AfterTest
