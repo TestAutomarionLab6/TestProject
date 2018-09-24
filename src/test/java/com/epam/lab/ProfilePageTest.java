@@ -40,12 +40,11 @@ public class ProfilePageTest implements ITestNGListener {
     @Description("ProfileTest Description: Verify if button UPSA is active")
     @Severity(SeverityLevel.NORMAL)
     public void verifyUPSAButton() {
-        profilePageBo.verifyUPSAButton();
+        profilePageBo.clickOnUPSAButton();
         profilePageBo.switchToUPSA();
         profilePageBo.waitUPSALogo();
-        Assert.assertEquals(DriverManager.getDriver().getCurrentUrl(),
-                PROFILE_PAGE_UPSA_URL,String.format("URLs are the same: %s",PROFILE_PAGE_UPSA_URL));
-        profilePageBo.switchToTelescope();
+        profilePageBo.verifyUPSAButton();
+
     }
 
     @AfterTest

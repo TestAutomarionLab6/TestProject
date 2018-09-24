@@ -45,9 +45,4 @@ public class DriverManager {
         return new WebDriverWait(getDriver(), WAITING_TIME);
     }
 
-    public static void switchToWindow(int windowNumber)
-    {
-        ArrayList tabs = new ArrayList(getDriver().getWindowHandles());
-        getDriver().switchTo().window(tabs.get(windowNumber).toString());
-    }
 }

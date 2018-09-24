@@ -1,12 +1,15 @@
 package com.epam.lab.business;
 
 import com.epam.lab.core.driver.DriverManager;
+import com.epam.lab.core.util.BrowserUtils;
 import com.epam.lab.core.util.MyLogger;
 import com.epam.lab.page.ProfilePagePo;
 import io.qameta.allure.Step;
 import org.apache.log4j.Level;
+import org.testng.Assert;
 
-import static com.epam.lab.core.util.Constants.*;
+import static com.epam.lab.core.util.Constants.NEXT_WINDOW_NUMBER;
+import static com.epam.lab.core.util.Constants.PROFILE_PAGE_URL;
 
 public class ProfilePageBo {
 
@@ -19,8 +22,8 @@ public class ProfilePageBo {
         myLogger.setLevel(Level.INFO);
     }
 
-    @Step("PageElementBO Step: Verify UPSA button...")
-    public void verifyUPSAButton() {
+    @Step("PageElementBO Step: Click on UPSA button...")
+    public void clickOnUPSAButton() {
         if (profilePagePo.getUPSAButton().isDisplayed()) {
             profilePagePo.getUPSAButton().click();
         }
@@ -28,18 +31,21 @@ public class ProfilePageBo {
 
     @Step("PageElementBO Step: Switch to next UPSA window in browser...")
     public void switchToUPSA() {
-        DriverManager.switchToWindow(NEXT_WINDOW_NUMBER);
+        BrowserUtils.switchToWindow(NEXT_WINDOW_NUMBER);
     }
 
-    @Step("PageElementBO Step: wait UPSA logo...")
+    @Step("PageElementBO Step: Wait UPSA logo...")
     public void waitUPSALogo() {
         profilePagePo.getUPSALogo().waitUntilVisible().isDisplayed();
     }
 
-    @Step("PageElementBO Step: Switch to previous telescope page in browser...")
-    public void switchToTelescope() {
-        DriverManager.getDriver().close();
-        DriverManager.switchToWindow(PREVIOUS_WINDOW_NUMBER);
+    @Step("PageElementBO Step: Verify UPSA button...")
+    public void verifyUPSAButton() {
+        boolean displayedLogo = profilePagePo.getUPSALogo().isDisplayed();
+        Assert.assertEquals(displayedLogo, true, "The UPSA logo are not displayed");
+        MyLogger.getLogger().info(displayedLogo ?
+                "Successfully goes to the UPSA page" : " The UPSA logo are not displayed");
     }
+
 
 }
