@@ -12,11 +12,10 @@ import static com.epam.lab.core.util.Constants.LOGIN_PAGE_URL;
 public class LoginPageBo {
 
     private LoginPagePo loginPagePo;
-    private HomePagePo homePagePo;
+
 
     public LoginPageBo() {
         loginPagePo = new LoginPagePo();
-        homePagePo = new HomePagePo();
         DriverManager.getDriver().get(LOGIN_PAGE_URL);
         MyLogger myLogger = new MyLogger();
         myLogger.setLevel(Level.INFO);
@@ -51,12 +50,7 @@ public class LoginPageBo {
     public void keepMeSignedIn() {
         loginPagePo.getKeepMeSignedIn().click();        
     }
-    
-    @Step("PageElementBO Step: logout...")
-    public void logout() {
-        homePagePo.getDropDownMenu().click();
-        homePagePo.getLogout().click();
-    }
+
     
     @Step("PageElementBO Step: click on link password.epam.com...")
     public void  passwordEpamComLink() {
