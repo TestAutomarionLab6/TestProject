@@ -6,6 +6,7 @@ import com.epam.lab.core.util.CsvParser;
 import com.epam.lab.core.util.User;
 import com.epam.lab.core.util.reportListeners.TestListener;
 import io.qameta.allure.Description;
+import org.testng.ITestNGListener;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
