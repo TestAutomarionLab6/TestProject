@@ -9,7 +9,6 @@ import com.epam.lab.core.util.reportListeners.TestListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import org.testng.Assert;
 import org.testng.ITestNGListener;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -17,9 +16,8 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.epam.lab.core.util.Constants.CSV_PATH;
-import static com.epam.lab.core.util.Constants.PROFILE_PAGE_HEROES_URL;
 
-@Listeners({ TestListener.class })
+@Listeners({TestListener.class})
 public class ProfilePageTest implements ITestNGListener {
 
     private LoginPageBo loginPageBo;
@@ -40,12 +38,10 @@ public class ProfilePageTest implements ITestNGListener {
     @Description("ProfileTest Description: Verify if button Heroes is active")
     @Severity(SeverityLevel.NORMAL)
     public void verifyHeroesButton() {
-        profilePageBo.verifyHeroesButton();
+        profilePageBo.clickOnHeroesButton();
         profilePageBo.switchToHeroes();
         profilePageBo.waitHeroesLogo();
-        Assert.assertEquals(DriverManager.getDriver().getCurrentUrl(),
-                PROFILE_PAGE_HEROES_URL,String.format("URLs are the same: %s",PROFILE_PAGE_HEROES_URL));
-        profilePageBo.switchToTelescope();
+        profilePageBo.verifyHeroesButton();
     }
 
     @AfterTest
