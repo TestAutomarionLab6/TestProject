@@ -10,15 +10,15 @@ public class ProfilePagePo extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"uservoice-custom-widget\"]")
     private PageElement feedbackButton;
 
-    @LogMessage("Close button")
-    @FindBy(xpath = "//button[@aria-label=\"Close Feedback Widget\"]")
-    private PageElement closeFeedbackButton;
+    @LogMessage("")
+    @FindBy(xpath = "//h1[@class=\"pane-title\"]")
+    private PageElement titleLabel;
 
     public PageElement getFeedbackButton() {
         return feedbackButton;
     }
 
-    public PageElement getCloseFeedback() {
-        return closeFeedbackButton;
+    public PageElement getTitleLabel() {
+        return titleLabel;
     }
 }

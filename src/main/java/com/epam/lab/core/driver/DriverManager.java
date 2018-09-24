@@ -35,7 +35,5 @@ public class DriverManager {
         driver.get().quit();
         driver.remove();
     }
-    public static void switchToFrame(int frameNumber) {
-        getDriver().switchTo().frame(frameNumber);
-    }
+
 }
