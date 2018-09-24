@@ -44,7 +44,7 @@ public class ProfilePageBo {
         boolean displayedLogo = profilePagePo.getUPSALogo().isDisplayed();
         Assert.assertEquals(displayedLogo, true, "The UPSA logo are not displayed");
         MyLogger.getLogger().info(displayedLogo ?
-                "Successfully goes to the UPSA page" : " The UPSA logo are not displayed");
+                "Successfully goes to the UPSA page" : "The UPSA logo are not displayed");
     }
 
 
