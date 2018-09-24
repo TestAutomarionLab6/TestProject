@@ -10,7 +10,14 @@ public class ProfilePagePo extends AbstractPage {
         @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-informers.wfep\"]")
         private PageElement profileButton;
 
+       @FindBy(xpath = "//li[@role=\"presentation\"][1]")
+        private PageElement profileView;
+
         public PageElement getProfileButton() {
-            return profileButton;
+                return profileButton;
+        }
+
+        public PageElement getProfileView() {
+                return profileView;
         }
 }
