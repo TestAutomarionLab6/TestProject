@@ -33,13 +33,13 @@ public class ProfilePageBo {
     @Step("PageElementBO Step: Verify profile page")
     public void verifyProfilePage() {
         String profileClassName = profilePagePo.getProfileView().getAttribute("class");
-        softAssertion.assertEquals(profileClassName, getFullClassname(), "Classname is same");
-        MyLogger.getLogger().info(profileClassName != getFullClassname() ?
+        softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE,PROFILE_CLASSNAME), "Classname is same");
+        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE,PROFILE_CLASSNAME) ?
                 "Successfully goes to the profile page" : "Classname is not same!");
     }
 
-    public String getFullClassname() {
-        return START_CLASSNAME_PROFILE_PAGE + CLASSNAME_PROFILE_PAGE;
+    public String getFullClassname(String firstPart, String secondPart) {
+        return String.format("%s%s", firstPart, secondPart);
     }
 
 }
