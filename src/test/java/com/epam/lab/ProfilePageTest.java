@@ -34,8 +34,8 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo = new ProfilePageBo();
     }
 
-    @Test(priority = 0, description = "Verify if button Feedback is active")
-    @Description("ProfileTest Description: Verify if button Feedback is active")
+    @Test(priority = 0, description = "Verify if Feedback button shows feedback window")
+    @Description("ProfileTest Description: Verify if Feedback button shows feedback window")
     @Severity(SeverityLevel.NORMAL)
     public void verifyFeedbackButton() {
         profilePageBo.verifyFeedbackButton();
