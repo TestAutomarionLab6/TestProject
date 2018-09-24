@@ -14,10 +14,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.core.util.Constants.CSV_PATH;
-import static com.epam.lab.core.util.Constants.PROFILE_PAGE_CLASSNAME;
 
 @Listeners({TestListener.class})
 public class ProfilePageTest implements ITestNGListener {
