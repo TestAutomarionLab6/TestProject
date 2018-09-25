@@ -1,10 +1,12 @@
 package com.epam.lab.business;
 
 import com.epam.lab.core.driver.DriverManager;
+import com.epam.lab.core.util.BrowserUtils;
 import com.epam.lab.core.util.MyLogger;
 import com.epam.lab.page.ProfilePagePo;
 import io.qameta.allure.Step;
 import org.apache.log4j.Level;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.core.util.Constants.*;
@@ -22,6 +24,28 @@ public class ProfilePageBo {
         myLogger.setLevel(Level.INFO);
         softAssertion = new SoftAssert();
     }
+  
+    @Step("PageElementBO Step: Verify Heroes button...")
+    public void clickOnHeroesButton() {
+        profilePagePo.getHeroesButton().click();
+    }
+
+    @Step("PageElementBO Step: Switch to next Heroes window in browser...")
+    public void switchToHeroes() {
+        BrowserUtils.switchToWindow(NEXT_WINDOW_NUMBER);
+    }
+
+    @Step("PageElementBO Step: wait Heroes logo...")
+    public void waitHeroesLogo() {
+        profilePagePo.getHeroesLogo().waitUntilVisible().isDisplayed();
+    }
+
+    @Step("PageElementBO Step: Verify Heroes button...")
+    public void verifyHeroesButton() {
+        boolean displayedLogo = profilePagePo.getHeroesLogo().isDisplayed();
+        Assert.assertEquals(displayedLogo, true, "The Heroes logo are not displayed");
+        MyLogger.getLogger().info(displayedLogo ?
+                "Successfully goes to the UPSA page" : "The Heroes logo are not displayed");
 
     @Step("PageElementBO Step: Click on Profile button...")
     public void clickOnProfileButton() {

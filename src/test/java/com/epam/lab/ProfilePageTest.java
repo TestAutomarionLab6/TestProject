@@ -35,6 +35,16 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo = new ProfilePageBo();
     }
 
+    @Test(priority = 0, description = "Verify if button Heroes is active")
+    @Description("ProfileTest Description: Verify if button Heroes is active")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyHeroesButton() {
+        profilePageBo.clickOnHeroesButton();
+        profilePageBo.switchToHeroes();
+        profilePageBo.waitHeroesLogo();
+        profilePageBo.verifyHeroesButton();
+    }
+  
     @Test(priority = 0, description = "Verify if Profile button shows a profile page")
     @Description("ProfileTest Description: Verify if Profile button shows a profile page")
     @Severity(SeverityLevel.NORMAL)
@@ -58,4 +68,9 @@ public class ProfilePageTest implements ITestNGListener {
         DriverManager.removeDriver();
     }
 
+    @AfterTest
+    @Description("Exit from program")
+    public void quit() {
+        DriverManager.removeDriver();
+    }
 }

@@ -15,6 +15,8 @@ public class Constants {
     public static final String CSV_PATH = "src/main/resources/user.csv";
     public static final String INVALID_LOGIN = "Vasia_Pupkind@epam.com";
     public static final String INVALID_PASSWORD = "IamVasia666";
+    public static final int WAITING_TIME = 10;
+    public static final int NEXT_WINDOW_NUMBER = 1;
 
 }
 
