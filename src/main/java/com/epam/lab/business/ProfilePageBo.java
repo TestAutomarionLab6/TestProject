@@ -25,9 +25,7 @@ public class ProfilePageBo {
 
     @Step("PageElementBO Step: Click on Profile button...")
     public void clickOnProfileButton() {
-        if (profilePagePo.getProfileButton().isDisplayed()) {
-            profilePagePo.getProfileButton().click();
-        }
+        profilePagePo.getProfileButton().click();
     }
 
     @Step("PageElementBO Step: Verify profile page")
