@@ -39,8 +39,17 @@ public class ProfilePageTest implements ITestNGListener {
     @Description("ProfileTest Description: Verify if Profile button shows a profile page")
     @Severity(SeverityLevel.NORMAL)
     public void verifyProfileButton() {
+        profilePageBo.clickOnWallButton();
         profilePageBo.clickOnProfileButton();
         profilePageBo.verifyProfilePage();
+    }
+
+    @Test(priority = 0, description = "Verify if Wall button shows a wall")
+    @Description("ProfileTest Description: Verify if Wall button shows a wall")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyWallButton() {
+        profilePageBo.clickOnWallButton();
+        profilePageBo.verifyWallPage();
     }
 
     @AfterTest

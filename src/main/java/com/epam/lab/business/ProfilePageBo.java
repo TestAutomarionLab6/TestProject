@@ -34,6 +34,18 @@ public class ProfilePageBo {
         softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE,PROFILE_CLASSNAME), "Classname is same");
         MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE,PROFILE_CLASSNAME) ?
                 "Successfully goes to the profile page" : "Classname is not same!");
+
+    @Step("PageElementBO Step: Click on Wall button...")
+    public void clickOnWallButton() {
+        profilePagePo.getWallButton().click();
+    }
+
+    @Step("PageElementBO Step: Verify the wall page")
+    public void verifyWallPage() {
+        String profileClassName = profilePagePo.getProfileView().getAttribute("class");
+        softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME), "Classname is same");
+        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE,WALL_CLASSNAME) ?
+                "Successfully goes to the wall page" : "Classname is not same!");
     }
 
     public String getFullClassname(String firstPart, String secondPart) {
