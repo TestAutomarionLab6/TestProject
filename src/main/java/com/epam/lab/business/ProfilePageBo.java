@@ -25,9 +25,7 @@ public class ProfilePageBo {
 
     @Step("PageElementBO Step: Click on Wall button...")
     public void clickOnWallButton() {
-        if (profilePagePo.getWallButton().isDisplayed()) {
-            profilePagePo.getWallButton().click();
-        }
+        profilePagePo.getWallButton().click();
     }
 
     @Step("PageElementBO Step: Verify the wall page")
