@@ -24,9 +24,7 @@ public class ProfilePageBo {
 
     @Step("PageElementBO Step: Click on UPSA button...")
     public void clickOnUPSAButton() {
-        if (profilePagePo.getUPSAButton().isDisplayed()) {
-            profilePagePo.getUPSAButton().click();
-        }
+        profilePagePo.getUPSAButton().click();
     }
 
     @Step("PageElementBO Step: Switch to next UPSA window in browser...")
