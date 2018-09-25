@@ -2,18 +2,24 @@ package com.epam.lab;
 
 import com.epam.lab.business.LoginPageBo;
 import com.epam.lab.business.ProfilePageBo;
+import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.util.CsvParser;
 import com.epam.lab.core.util.User;
 import com.epam.lab.core.util.reportListeners.TestListener;
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.ITestNGListener;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import static com.epam.lab.core.util.Constants.CSV_PATH;
 
-@Listeners({ TestListener.class })
+@Listeners({TestListener.class})
 public class ProfilePageTest implements ITestNGListener {
+
 
     private LoginPageBo loginPageBo;
     private ProfilePageBo profilePageBo;
@@ -29,5 +35,18 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo = new ProfilePageBo();
     }
 
+    @Test(priority = 0, description = "Verify if Wall button shows a wall")
+    @Description("ProfileTest Description: Verify if Wall button shows a wall")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyWallButton() {
+        profilePageBo.clickOnWallButton();
+        profilePageBo.verifyWallPage();
+    }
+
+    @AfterTest
+    @Description("Exit from program")
+    public void quit() {
+        DriverManager.removeDriver();
+    }
 
 }
