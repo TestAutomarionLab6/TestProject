@@ -35,12 +35,11 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo = new ProfilePageBo();
     }
 
-    @Test(priority = 0, description = "Verify if button Profile is active")
-    @Description("ProfileTest Description: Verify if button Profile is active")
+    @Test(priority = 0, description = "Verify if Cover image is displayed")
+    @Description("ProfileTest Description: Verify if Cover image is displayed")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyProfileButton() {
-        SoftAssert softAssertion = new SoftAssert();
-        softAssertion.assertEquals(profilePageBo.verifyDisplayedImage(), true, "Cover image is displayed");
+    public void verifyCoverImage() {
+        profilePageBo.verifyDisplayedImage();
     }
 
     @AfterTest
