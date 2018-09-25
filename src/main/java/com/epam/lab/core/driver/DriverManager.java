@@ -4,11 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
-
-import static com.epam.lab.core.util.Constants.DRIVER;
-import static com.epam.lab.core.util.Constants.DRIVER_PATH;
-import static com.epam.lab.core.util.Constants.WAITING_TIME;
+import static com.epam.lab.core.util.Constants.*;
 
 public class DriverManager {
 
@@ -41,7 +37,7 @@ public class DriverManager {
         driver.remove();
     }
 
-    public static WebDriverWait newWait () {
+    public static WebDriverWait newWait() {
         return new WebDriverWait(getDriver(), WAITING_TIME);
     }
 

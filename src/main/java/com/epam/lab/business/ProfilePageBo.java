@@ -7,9 +7,6 @@ import com.epam.lab.page.ProfilePagePo;
 import io.qameta.allure.Step;
 import org.apache.log4j.Level;
 import org.testng.Assert;
-
-import static com.epam.lab.core.util.Constants.NEXT_WINDOW_NUMBER;
-import static com.epam.lab.core.util.Constants.PROFILE_PAGE_URL;
 import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.core.util.Constants.*;
@@ -27,7 +24,7 @@ public class ProfilePageBo {
         myLogger.setLevel(Level.INFO);
         softAssertion = new SoftAssert();
     }
-  
+
     @Step("PageElementBO Step: Verify Heroes button...")
     public void clickOnHeroesButton() {
         profilePagePo.getHeroesButton().click();
@@ -72,6 +69,7 @@ public class ProfilePageBo {
         Assert.assertEquals(displayedLogo, true, "The Heroes logo are not displayed");
         MyLogger.getLogger().info(displayedLogo ?
                 "Successfully goes to the UPSA page" : "The Heroes logo are not displayed");
+    }
 
     @Step("PageElementBO Step: Click on Profile button...")
     public void clickOnProfileButton() {
@@ -81,9 +79,10 @@ public class ProfilePageBo {
     @Step("PageElementBO Step: Verify profile page")
     public void verifyProfilePage() {
         String profileClassName = profilePagePo.getProfileView().getAttribute("class");
-        softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE,PROFILE_CLASSNAME), "Classname is same");
-        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE,PROFILE_CLASSNAME) ?
+        softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME), "Classname is same");
+        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME) ?
                 "Successfully goes to the profile page" : "Classname is not same!");
+    }
 
     @Step("PageElementBO Step: Click on Wall button...")
     public void clickOnWallButton() {
@@ -94,7 +93,7 @@ public class ProfilePageBo {
     public void verifyWallPage() {
         String profileClassName = profilePagePo.getProfileView().getAttribute("class");
         softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME), "Classname is same");
-        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE,WALL_CLASSNAME) ?
+        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME) ?
                 "Successfully goes to the wall page" : "Classname is not same!");
     }
 

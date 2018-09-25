@@ -1,13 +1,11 @@
 package com.epam.lab.core.pageElement;
 
-import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.util.MyLogger;
-import org.apache.log4j.Logger;
 import io.qameta.allure.Step;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

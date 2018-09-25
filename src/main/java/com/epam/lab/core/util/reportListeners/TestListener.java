@@ -13,9 +13,9 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestListener implements ITestListener {
-    private WebDriver webDriver = DriverManager.getDriver();
     private final static Logger LOG = MyLogger.getLogger();
-    
+    private WebDriver webDriver = DriverManager.getDriver();
+
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
@@ -24,14 +24,14 @@ public class TestListener implements ITestListener {
         return iTestContext.getCurrentXmlTest().getName();
     }
 
-    @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshotPNG(WebDriver webDriver) {
-        return ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.BYTES);
-    }
-
     @Attachment(value = "{0}", type = "text/plane")
     public static String saveTextLog(String message) {
         return message;
+    }
+
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] saveScreenshotPNG(WebDriver webDriver) {
+        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
     }
 
     @Step("TestListener Step: method: {onTestStart}...")

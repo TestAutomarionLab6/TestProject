@@ -6,8 +6,7 @@ import java.util.ArrayList;
 
 public class BrowserUtils {
 
-    public static void switchToWindow(int windowNumber)
-    {
+    public static void switchToWindow(int windowNumber) {
         ArrayList tabs = new ArrayList(DriverManager.getDriver().getWindowHandles());
         DriverManager.getDriver().switchTo().window(tabs.get(windowNumber).toString());
     }
