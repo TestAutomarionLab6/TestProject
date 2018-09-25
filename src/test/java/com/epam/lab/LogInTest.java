@@ -1,4 +1,5 @@
 package com.epam.lab;
+import com.epam.lab.business.HomePageBo;
 import com.epam.lab.business.LoginPageBo;
 import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.util.CsvParser;
@@ -21,6 +22,7 @@ import static com.epam.lab.core.util.Constants.INVALID_PASSWORD;
 @Listeners({ TestListener.class })
 public class LogInTest implements ITestNGListener {
 	private LoginPageBo loginPageBo;
+	private HomePageBo homePageBo;
 	private User user;
 	private String currentURL;
 
@@ -29,6 +31,7 @@ public class LogInTest implements ITestNGListener {
 	public void setup() {
 		user = CsvParser.createObjectsFromCsv(CSV_PATH);
 		loginPageBo = new LoginPageBo();
+		homePageBo = new HomePageBo();
 	}
 
 	@Test(priority = 8, description = "LogInTest Scenario with valid username and valid password")
@@ -37,7 +40,7 @@ public class LogInTest implements ITestNGListener {
 	public void logInTestWithValidLoginAndValidPassword() {
 		loginPageBo.logIn(user.getLogin(), user.getPassword());
 		currentURL = DriverManager.getDriver().getCurrentUrl();		
-		loginPageBo.logout();		
+		homePageBo.logout();
 		Assert.assertEquals(currentURL,HOME_PAGE_URL);		
 	}	
 	
@@ -115,11 +118,12 @@ public class LogInTest implements ITestNGListener {
 		currentURL = DriverManager.getDriver().getCurrentUrl();					
 		Assert.assertNotEquals(currentURL,HOME_PAGE_URL);		
 	}
+
 	
 	@AfterTest
 	@Description("Exit from program")
 	public void quit() {
 		DriverManager.removeDriver();
 	}
-  
+
 }
