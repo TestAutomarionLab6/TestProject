@@ -4,10 +4,12 @@ import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.LogMessage;
 import org.openqa.selenium.support.FindBy;
 
+import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
+
 public class ProfilePagePo extends AbstractPage {
 
     @LogMessage("UPSA button")
-    @FindBy(xpath = "//*[@id=\"rgn___epam_people_profile_v-eppplGeneralInfo\"]/div/div[2]/div/div[1]/div[2]/div[2]/div[1]/span")
+    @FindBy(xpath = "//*[@class=\""+START_CLASSNAME_PROFILE_PAGE+"EntryLinks__adapters\"]")
     private PageElement upsaButton;
 
     @LogMessage("UPSA logo")

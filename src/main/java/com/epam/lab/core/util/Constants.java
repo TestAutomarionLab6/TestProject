@@ -8,7 +8,7 @@ public class Constants {
     public static final String DRIVER_PATH = "src/main/resources/chromedriver.exe";
     public static final String LOGIN_PAGE_URL = "https://telescope.epam.com/";
     public static final String PROFILE_PAGE_URL = "https://telescope.epam.com/who/Yevhen_Hrafov";
-    public static final String PROFILE_PAGE_UPSA_URL = "https://upsa.epam.com/workload/employeeView.do?employeeId=4060741400337334594#emplTab=general";
+    public static final String START_CLASSNAME_PROFILE_PAGE = "e3sui";
     public static final String HOME_PAGE_URL = "https://telescope.epam.com/search/people";
     public static final String CSV_PATH = "src/main/resources/user.csv";
     public static final String INVALID_LOGIN = "Vasia_Pupkind@epam.com";
