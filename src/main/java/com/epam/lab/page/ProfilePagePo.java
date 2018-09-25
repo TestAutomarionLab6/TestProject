@@ -4,10 +4,12 @@ import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.LogMessage;
 import org.openqa.selenium.support.FindBy;
 
+import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
+
 public class ProfilePagePo extends AbstractPage {
 
     @LogMessage("Heroes button")
-    @FindBy(xpath = "//*[@data-type=\"hero.epam.com\"]")
+    @FindBy(xpath = "//*[@class=\""+START_CLASSNAME_PROFILE_PAGE+"EntryLinks__socialIconContainer\"]")
     private PageElement heroesButton;
 
     @LogMessage("Heroes logo")
