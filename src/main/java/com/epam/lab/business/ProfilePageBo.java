@@ -7,6 +7,9 @@ import com.epam.lab.page.ProfilePagePo;
 import io.qameta.allure.Step;
 import org.apache.log4j.Level;
 import org.testng.Assert;
+
+import static com.epam.lab.core.util.Constants.NEXT_WINDOW_NUMBER;
+import static com.epam.lab.core.util.Constants.PROFILE_PAGE_URL;
 import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.core.util.Constants.*;
@@ -33,6 +36,29 @@ public class ProfilePageBo {
     @Step("PageElementBO Step: Switch to next Heroes window in browser...")
     public void switchToHeroes() {
         BrowserUtils.switchToWindow(NEXT_WINDOW_NUMBER);
+    }
+
+    @Step("PageElementBO Step: Click on UPSA button...")
+    public void clickOnUPSAButton() {
+        profilePagePo.getUPSAButton().click();
+    }
+
+    @Step("PageElementBO Step: Switch to next UPSA window in browser...")
+    public void switchToUPSA() {
+        BrowserUtils.switchToWindow(NEXT_WINDOW_NUMBER);
+    }
+
+    @Step("PageElementBO Step: Wait UPSA logo...")
+    public void waitUPSALogo() {
+        profilePagePo.getUPSALogo().waitUntilVisible().isDisplayed();
+    }
+
+    @Step("PageElementBO Step: Verify UPSA button...")
+    public void verifyUPSAButton() {
+        boolean displayedLogo = profilePagePo.getUPSALogo().isDisplayed();
+        Assert.assertEquals(displayedLogo, true, "The UPSA logo are not displayed");
+        MyLogger.getLogger().info(displayedLogo ?
+                "Successfully goes to the UPSA page" : "The UPSA logo are not displayed");
     }
 
     @Step("PageElementBO Step: wait Heroes logo...")

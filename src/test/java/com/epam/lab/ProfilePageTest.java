@@ -35,6 +35,17 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo = new ProfilePageBo();
     }
 
+    @Test(priority = 0, description = "Verify if button UPSA is active")
+    @Description("ProfileTest Description: Verify if button UPSA is active")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyUPSAButton() {
+        profilePageBo.clickOnUPSAButton();
+        profilePageBo.switchToUPSA();
+        profilePageBo.waitUPSALogo();
+        profilePageBo.verifyUPSAButton();
+
+    }
+
     @Test(priority = 0, description = "Verify if button Heroes is active")
     @Description("ProfileTest Description: Verify if button Heroes is active")
     @Severity(SeverityLevel.NORMAL)
