@@ -20,6 +20,7 @@ import static com.epam.lab.core.util.Constants.CSV_PATH;
 @Listeners({TestListener.class})
 public class ProfilePageTest implements ITestNGListener {
 
+
     private LoginPageBo loginPageBo;
     private ProfilePageBo profilePageBo;
     private User user;
@@ -43,6 +44,39 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.waitUPSALogo();
         profilePageBo.verifyUPSAButton();
 
+    }
+
+    @Test(priority = 0, description = "Verify if button Heroes is active")
+    @Description("ProfileTest Description: Verify if button Heroes is active")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyHeroesButton() {
+        profilePageBo.clickOnHeroesButton();
+        profilePageBo.switchToHeroes();
+        profilePageBo.waitHeroesLogo();
+        profilePageBo.verifyHeroesButton();
+    }
+  
+    @Test(priority = 0, description = "Verify if Profile button shows a profile page")
+    @Description("ProfileTest Description: Verify if Profile button shows a profile page")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyProfileButton() {
+        profilePageBo.clickOnWallButton();
+        profilePageBo.clickOnProfileButton();
+        profilePageBo.verifyProfilePage();
+    }
+
+    @Test(priority = 0, description = "Verify if Wall button shows a wall")
+    @Description("ProfileTest Description: Verify if Wall button shows a wall")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyWallButton() {
+        profilePageBo.clickOnWallButton();
+        profilePageBo.verifyWallPage();
+    }
+
+    @AfterTest
+    @Description("Exit from program")
+    public void quit() {
+        DriverManager.removeDriver();
     }
 
     @AfterTest
