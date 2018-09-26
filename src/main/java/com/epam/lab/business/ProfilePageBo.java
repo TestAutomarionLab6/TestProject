@@ -105,7 +105,7 @@ public class ProfilePageBo {
 	public void getAndClickAllContactsButton() {
 		profilePagePo.getAndClickAllContactsButton();
 	}
-    
+/*    
     @Step("PageElementBO Step: Verify All Contacts")
     public void verifyAllContacts(String phone, String email, String skype, String email2 ) {    	
         softAssertion.assertEquals(phone, profilePagePo.getPhone().getText(), "Phone number is't correct");
@@ -121,5 +121,49 @@ public class ProfilePageBo {
         MyLogger.getLogger().info( email2.equals(profilePagePo.getEmail2().getText()) ?
         		                   "email2 number is correct" : "email2 number is't correct");
     }    
-
+*/
+    @Step("PageElementBO Step: Verify All Contacts")
+    public void verifyPersonalData(String firstAndLastName, String jobTitle, String jobLocation,
+    		                       String productionCategory,String jobFunction, String primarySkill ) { 
+    	
+        softAssertion.assertEquals(firstAndLastName, profilePagePo.getFirstAndLastName().getText(), "First And Last Name is't correct");
+        MyLogger.getLogger().info( firstAndLastName.equals(profilePagePo.getFirstAndLastName().getText()) ? 
+        		                   "FirstAndLastName is correct" : "FirstAndLastName is't correct");
+        
+        softAssertion.assertEquals(jobTitle, profilePagePo.getJobTitle().getText(), "jobTitle is't correct");
+        MyLogger.getLogger().info( jobTitle.equals(profilePagePo.getJobTitle().getText()) ? 
+        		                   "jobTitle number is correct" : "jobTitle number is't correct");
+        
+        softAssertion.assertEquals(jobLocation, profilePagePo.getJobLocation().getText(), "jobLocation is't correct");
+        MyLogger.getLogger().info( jobLocation.equals(profilePagePo.getJobLocation().getText()) ?
+        		                   "jobLocation is correct" : "jobLocation is't correct");
+        
+        softAssertion.assertEquals(productionCategory, profilePagePo.getProductionCategory().getText(), "productionCategory is't correct");
+        MyLogger.getLogger().info( productionCategory.equals(profilePagePo.getProductionCategory().getText()) ?
+        		                   "productionCategory is correct" : "productionCategory is't correct");
+        
+        softAssertion.assertTrue( isJobFunctionCorrect(jobFunction), "jobFunction is't correct");
+        MyLogger.getLogger().info( isJobFunctionCorrect(jobFunction) ?
+        		                   "jobFunction is correct" : "jobFunction is't correct");
+        
+        softAssertion.assertEquals(primarySkill, profilePagePo.getPrimarySkill().getText(), "primarySkill is't correct");
+        MyLogger.getLogger().info( primarySkill.equals(profilePagePo.getPrimarySkill().getText()) ?
+        		                   "primarySkill is correct" : "primarySkill is't correct");
+    }
+    
+    public boolean isJobFunctionCorrect(String jobFunction) {
+		String strFromProfile = profilePagePo.getJobFunction().getText();			
+		if (jobFunction.length() - 1 == strFromProfile.length()) {			
+			for (int i = 0; i < strFromProfile.length(); i++) {
+				if (jobFunction.charAt(i) == '\\')
+					continue;
+				if (jobFunction.charAt(i) != strFromProfile.charAt(i)) {					
+					return false;
+				}				
+			}			
+			return true;
+		} else
+		return false;
+	}
+    
 }
