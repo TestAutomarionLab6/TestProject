@@ -25,7 +25,6 @@ public class ProfilePageTest implements ITestNGListener {
     private ProfilePageBo profilePageBo;
     private User user;
 
-
     @BeforeTest
     @Description("Loading configurations before test")
     public void setup() {
@@ -40,6 +39,44 @@ public class ProfilePageTest implements ITestNGListener {
     @Severity(SeverityLevel.NORMAL)
     public void verifyCoverImage() {
         profilePageBo.verifyDisplayedImage();
+    }
+  
+    @Test(priority = 1, description = "Verify if button UPSA is active")
+    @Description("ProfileTest Description: Verify if button UPSA is active")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyUPSAButton() {
+        profilePageBo.clickOnUPSAButton();
+        profilePageBo.switchToUPSA();
+        profilePageBo.waitUPSALogo();
+        profilePageBo.verifyUPSAButton();
+
+    }
+
+    @Test(priority = 2, description = "Verify if button Heroes is active")
+    @Description("ProfileTest Description: Verify if button Heroes is active")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyHeroesButton() {
+        profilePageBo.clickOnHeroesButton();
+        profilePageBo.switchToHeroes();
+        profilePageBo.waitHeroesLogo();
+        profilePageBo.verifyHeroesButton();
+    }
+
+    @Test(priority = 3, description = "Verify if Profile button shows a profile page")
+    @Description("ProfileTest Description: Verify if Profile button shows a profile page")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyProfileButton() {
+        profilePageBo.clickOnWallButton();
+        profilePageBo.clickOnProfileButton();
+        profilePageBo.verifyProfilePage();
+    }
+
+    @Test(priority = 4, description = "Verify if Wall button shows a wall")
+    @Description("ProfileTest Description: Verify if Wall button shows a wall")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyWallButton() {
+        profilePageBo.clickOnWallButton();
+        profilePageBo.verifyWallPage();
     }
 
     @AfterTest
