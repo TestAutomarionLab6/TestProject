@@ -11,7 +11,7 @@ public class HomePageBo {
 
 
     public HomePageBo() {
-        homePagePo= new HomePagePo();
+        homePagePo = new HomePagePo();
         MyLogger myLogger = new MyLogger();
         myLogger.setLevel(Level.INFO);
     }
