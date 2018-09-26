@@ -107,15 +107,19 @@ public class ProfilePageBo {
 	}
     
     @Step("PageElementBO Step: Verify All Contacts")
-    public void verifyAllContacts(String phone, String email, String skype, String email2 ) {
-        softAssertion.assertEquals(phone, profilePagePo.getPhone(),"Phone number is't correct");
-        MyLogger.getLogger().info( phone.equals(profilePagePo.getPhone()) ? "phone number is'n correct" : "phone number is correct");
-        softAssertion.assertEquals(email, profilePagePo.getEmail(),"Email is't correct");
-        MyLogger.getLogger().info( email.equals(profilePagePo.getEmail()) ? "email number is'n correct" : "email number is correct");
-        softAssertion.assertEquals(skype, profilePagePo.getSkype(),"Skype is't correct");
-        MyLogger.getLogger().info( skype.equals(profilePagePo.getSkype()) ? "skype number is'n correct" : "skype number is correct");
-        softAssertion.assertEquals(email2, profilePagePo.getEmail2(),"Email2 number is't correct");
-        MyLogger.getLogger().info( email2.equals(profilePagePo.getEmail2()) ? "email2 number is'n correct" : "email2 number is correct");
+    public void verifyAllContacts(String phone, String email, String skype, String email2 ) {    	
+        softAssertion.assertEquals(phone, profilePagePo.getPhone().getText(), "Phone number is't correct");
+        MyLogger.getLogger().info( phone.equals(profilePagePo.getPhone().getText()) ? 
+        		                   "phone number is correct" : "phone number is't correct");
+        softAssertion.assertEquals(email, profilePagePo.getEmail().getText(), "Email is't correct");
+        MyLogger.getLogger().info( email.equals(profilePagePo.getEmail().getText()) ? 
+        		                   "email number is correct" : "email number is't correct");
+        softAssertion.assertEquals(skype, profilePagePo.getSkype().getText(), "Skype is't correct");
+        MyLogger.getLogger().info( skype.equals(profilePagePo.getSkype().getText()) ?
+        		                   "skype number is correct" : "skype number is't correct");
+        softAssertion.assertEquals(email2, profilePagePo.getEmail2().getText(), "Email2 number is't correct");
+        MyLogger.getLogger().info( email2.equals(profilePagePo.getEmail2().getText()) ?
+        		                   "email2 number is correct" : "email2 number is't correct");
     }    
 
 }
