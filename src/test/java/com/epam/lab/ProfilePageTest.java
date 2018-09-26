@@ -72,6 +72,15 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
     }
+    
+    @Test(priority = 0, description = "Verify if button All Contact is active and with right info")		
+    @Description("ProfileTest Description: Verify if data in All Contacts comply with pessonal data")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyAllContacts() {
+    	profilePageBo.getAndClickAllContactsButton();
+    	profilePageBo.verifyAllContacts(user.getPhone(), user.getEmail(), user.getSkype(), user.getEmail2() );    	
+    	profilePageBo.getAndClickAllContactsButton();
+    }  
 
     @AfterTest
     @Description("Exit from program")

@@ -1,7 +1,11 @@
 package com.epam.lab.page;
 
+import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.LogMessage;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
@@ -29,6 +33,21 @@ public class ProfilePagePo extends AbstractPage {
     @LogMessage("Wall button")
     @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-wallview.wfep\"]")
     private PageElement wallButton;
+    @LogMessage("All Contacts button")    
+    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")    
+    private WebElement allContactsButton;    
+    @LogMessage("Phone")
+    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[1]/span[2]")
+    private PageElement phone;
+    @LogMessage("Email")
+    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[2]/span[2]")
+    private PageElement email;
+    @LogMessage("Skype")
+    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[3]/span[2]")
+    private PageElement skype;
+    @LogMessage("Email2")
+    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[4]/span[2]")
+    private PageElement email2;
 
     public PageElement getUPSAButton() {
         return upsaButton;
@@ -56,5 +75,26 @@ public class ProfilePagePo extends AbstractPage {
 
     public PageElement getProfileView() {
         return profileView;
+    }
+    
+    public void getAndClickAllContactsButton() {
+    	JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();    	
+    	js.executeScript("arguments[0].click();", allContactsButton);    	   		
+    }
+    
+    public PageElement getPhone() {
+        return phone;
+    }
+    
+    public PageElement getEmail() {
+        return email;
+    }
+    
+    public PageElement getSkype() {
+        return skype;
+    }
+    
+    public PageElement getEmail2() {
+        return email2;
     }
 }

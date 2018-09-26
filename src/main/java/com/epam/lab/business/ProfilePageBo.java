@@ -100,5 +100,22 @@ public class ProfilePageBo {
     public String getFullClassname(String firstPart, String secondPart) {
         return String.format("%s%s", firstPart, secondPart);
     }
+    
+    @Step("PageElementBO Step:  get and click All Contacts Button...")
+	public void getAndClickAllContactsButton() {
+		profilePagePo.getAndClickAllContactsButton();
+	}
+    
+    @Step("PageElementBO Step: Verify All Contacts")
+    public void verifyAllContacts(String phone, String email, String skype, String email2 ) {
+        softAssertion.assertEquals(phone, profilePagePo.getPhone(),"Phone number is't correct");
+        MyLogger.getLogger().info( phone.equals(profilePagePo.getPhone()) ? "phone number is'n correct" : "phone number is correct");
+        softAssertion.assertEquals(email, profilePagePo.getEmail(),"Email is't correct");
+        MyLogger.getLogger().info( email.equals(profilePagePo.getEmail()) ? "email number is'n correct" : "email number is correct");
+        softAssertion.assertEquals(skype, profilePagePo.getSkype(),"Skype is't correct");
+        MyLogger.getLogger().info( skype.equals(profilePagePo.getSkype()) ? "skype number is'n correct" : "skype number is correct");
+        softAssertion.assertEquals(email2, profilePagePo.getEmail2(),"Email2 number is't correct");
+        MyLogger.getLogger().info( email2.equals(profilePagePo.getEmail2()) ? "email2 number is'n correct" : "email2 number is correct");
+    }    
 
 }
