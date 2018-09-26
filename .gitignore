@@ -7,4 +7,3 @@ allure-results/*
 .project
 test-output/*
 logs.log
-/target/
