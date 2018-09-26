@@ -72,14 +72,13 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
     }
-
-    @Test(priority = 0, description = "Verify Native Name")
-    @Description("ProfileTest Description: Verify Native Name after click on popover sign near First and Last Name")
+ 
+    @Test(priority = 0, description = "Verify if PAST PROJECTS button shows past projects")
+    @Description("ProfileTest Description: Verify if PAST PROJECTS button shows past projects")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyNativeName() { 
-    	profilePageBo.clickOnPopoverButton();
-    	profilePageBo.verifyNativeName( user.getNativeName() );
-    	profilePageBo.clickOnPopoverButton();    	
+    public void verifyPastProjectsButton() { 
+    	profilePageBo.clickOnPastProjectsButton();
+    	profilePageBo.verifyPastProjectsPage();    	  	
     }
     
     @AfterTest
