@@ -78,6 +78,13 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
     }
+  
+    @Test(priority = 5, description = "Verify if Feedback button shows feedback window")
+    @Description("ProfileTest Description: Verify if Feedback button shows feedback window")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyFeedbackButton() {
+        profilePageBo.verifyFeedbackButton();
+    }
 
     @AfterTest
     @Description("Exit from program")

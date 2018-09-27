@@ -13,6 +13,12 @@ public class ProfilePagePo extends AbstractPage {
             "LocationCoverImage__imageBlock_image " + START_CLASSNAME_PROFILE_PAGE +
             "LocationCoverImage__imageBlock_image-loaded\"]")
     private PageElement coverImage;
+    @LogMessage("Feedback button")
+    @FindBy(xpath = "//*[@id=\"uservoice-custom-widget\"]")
+    private PageElement feedbackButton;
+    @LogMessage("Title label")
+    @FindBy(xpath = "//h1[@class=\"pane-title\"]")
+    private PageElement titleLabel;
     @LogMessage("UPSA button")
     @FindBy(xpath = "//*[@class=\"" + START_CLASSNAME_PROFILE_PAGE + "EntryLinks__adapters\"]")
     private PageElement upsaButton;
@@ -64,5 +70,12 @@ public class ProfilePagePo extends AbstractPage {
 
     public PageElement getCoverImage() {
         return coverImage;
+      
+    public PageElement getFeedbackButton() {
+        return feedbackButton;
+    }
+
+    public PageElement getTitleLabel() {
+        return titleLabel;
     }
 }
