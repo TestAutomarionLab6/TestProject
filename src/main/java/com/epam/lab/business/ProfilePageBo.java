@@ -25,6 +25,26 @@ public class ProfilePageBo {
         softAssertion = new SoftAssert();
     }
 
+    @Step("PageElementBO Step: Verify Feedback button...")
+    public void verifyFeedbackButton() {
+        openFeedback();
+        checkFeedbackButton();
+    }
+
+    @Step("PageElementBO Step: open Feedback button...")
+    public void openFeedback() {
+        profilePagePo.getFeedbackButton().click();
+        BrowserUtils.switchToFrame(FEEDBACK_FRAME_NUMBER);
+    }
+
+    @Step("PageElementBO Step: Verify Feedback button...")
+    public void checkFeedbackButton() {
+        String titleText = profilePagePo.getTitleLabel().getText();
+        Assert.assertEquals(titleText, ALERT_TITLE_OF_FEEDBACK, "The titles are not equal!");
+        MyLogger.getLogger().info(titleText.equals(ALERT_TITLE_OF_FEEDBACK) ?
+                "The titles are not equal!" : "Successfully goes to the Feedback");
+    }
+
     @Step("PageElementBO Step: Verify Heroes button...")
     public void clickOnHeroesButton() {
         profilePagePo.getHeroesButton().click();
@@ -80,8 +100,8 @@ public class ProfilePageBo {
     public void verifyProfilePage() {
         String profileClassName = profilePagePo.getProfileView().getAttribute("class");
         softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME), "Classname is same");
-        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME) ?
-                "Successfully goes to the profile page" : "Classname is not same!");
+        MyLogger.getLogger().info(profileClassName.equals(getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME)) ?
+                "Classname is not same!" : "Successfully goes to the profile page");
     }
 
     @Step("PageElementBO Step: Click on Wall button...")
@@ -93,12 +113,11 @@ public class ProfilePageBo {
     public void verifyWallPage() {
         String profileClassName = profilePagePo.getProfileView().getAttribute("class");
         softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME), "Classname is same");
-        MyLogger.getLogger().info(profileClassName != getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME) ?
-                "Successfully goes to the wall page" : "Classname is not same!");
+        MyLogger.getLogger().info(profileClassName.equals(getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME)) ?
+                "Classname is not same!" : "Successfully goes to the wall page");
     }
 
     public String getFullClassname(String firstPart, String secondPart) {
         return String.format("%s%s", firstPart, secondPart);
     }
-
 }

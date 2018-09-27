@@ -20,11 +20,9 @@ import static com.epam.lab.core.util.Constants.CSV_PATH;
 @Listeners({TestListener.class})
 public class ProfilePageTest implements ITestNGListener {
 
-
     private LoginPageBo loginPageBo;
     private ProfilePageBo profilePageBo;
     private User user;
-
 
     @BeforeTest
     @Description("Loading configurations before test")
@@ -34,8 +32,8 @@ public class ProfilePageTest implements ITestNGListener {
         loginPageBo.logIn(user.getLogin(), user.getPassword());
         profilePageBo = new ProfilePageBo();
     }
-
-    @Test(priority = 0, description = "Verify if button UPSA is active")
+  
+    @Test(priority = 1, description = "Verify if button UPSA is active")
     @Description("ProfileTest Description: Verify if button UPSA is active")
     @Severity(SeverityLevel.NORMAL)
     public void verifyUPSAButton() {
@@ -46,7 +44,7 @@ public class ProfilePageTest implements ITestNGListener {
 
     }
 
-    @Test(priority = 0, description = "Verify if button Heroes is active")
+    @Test(priority = 2, description = "Verify if button Heroes is active")
     @Description("ProfileTest Description: Verify if button Heroes is active")
     @Severity(SeverityLevel.NORMAL)
     public void verifyHeroesButton() {
@@ -56,7 +54,7 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.verifyHeroesButton();
     }
 
-    @Test(priority = 0, description = "Verify if Profile button shows a profile page")
+    @Test(priority = 3, description = "Verify if Profile button shows a profile page")
     @Description("ProfileTest Description: Verify if Profile button shows a profile page")
     @Severity(SeverityLevel.NORMAL)
     public void verifyProfileButton() {
@@ -65,12 +63,19 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.verifyProfilePage();
     }
 
-    @Test(priority = 0, description = "Verify if Wall button shows a wall")
+    @Test(priority = 4, description = "Verify if Wall button shows a wall")
     @Description("ProfileTest Description: Verify if Wall button shows a wall")
     @Severity(SeverityLevel.NORMAL)
     public void verifyWallButton() {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
+    }
+  
+    @Test(priority = 5, description = "Verify if Feedback button shows feedback window")
+    @Description("ProfileTest Description: Verify if Feedback button shows feedback window")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyFeedbackButton() {
+        profilePageBo.verifyFeedbackButton();
     }
 
     @AfterTest
@@ -78,5 +83,4 @@ public class ProfilePageTest implements ITestNGListener {
     public void quit() {
         DriverManager.removeDriver();
     }
-
 }
