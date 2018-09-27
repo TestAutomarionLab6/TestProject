@@ -8,6 +8,11 @@ import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
 
 public class ProfilePagePo extends AbstractPage {
 
+    @LogMessage("Cover image")
+    @FindBy(xpath = "//*[@class=\"" + START_CLASSNAME_PROFILE_PAGE +
+            "LocationCoverImage__imageBlock_image " + START_CLASSNAME_PROFILE_PAGE +
+            "LocationCoverImage__imageBlock_image-loaded\"]")
+    private PageElement coverImage;
     @LogMessage("Feedback button")
     @FindBy(xpath = "//*[@id=\"uservoice-custom-widget\"]")
     private PageElement feedbackButton;
@@ -62,8 +67,11 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getProfileView() {
         return profileView;
     }
+
+    public PageElement getCoverImage() {
+        return coverImage;
       
-   public PageElement getFeedbackButton() {
+    public PageElement getFeedbackButton() {
         return feedbackButton;
     }
 

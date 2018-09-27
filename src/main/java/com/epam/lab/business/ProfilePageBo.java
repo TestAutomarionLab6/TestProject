@@ -25,6 +25,19 @@ public class ProfilePageBo {
         softAssertion = new SoftAssert();
     }
 
+    @Step("PageElementBO Step: Verify if cover image is displayed...")
+    public void verifyDisplayedImage() {
+        SoftAssert softAssertion = new SoftAssert();
+        softAssertion.assertEquals(isDisplayed(), true, "The cover image is not displayed");
+        MyLogger.getLogger().info(isDisplayed() ?
+                "The cover image has been successfully loaded" : "The cover image is not displayed");
+    }
+
+    @Step("PageElementBO Step: Check image display...")
+    public boolean isDisplayed() {
+        return profilePagePo.getCoverImage().isDisplayed();
+    }
+  
     @Step("PageElementBO Step: Verify Feedback button...")
     public void verifyFeedbackButton() {
         openFeedback();

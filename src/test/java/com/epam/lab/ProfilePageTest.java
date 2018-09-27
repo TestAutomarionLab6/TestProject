@@ -14,6 +14,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.core.util.Constants.CSV_PATH;
 
@@ -31,6 +32,13 @@ public class ProfilePageTest implements ITestNGListener {
         loginPageBo = new LoginPageBo();
         loginPageBo.logIn(user.getLogin(), user.getPassword());
         profilePageBo = new ProfilePageBo();
+    }
+
+    @Test(priority = 0, description = "Verify if Cover image is displayed")
+    @Description("ProfileTest Description: Verify if Cover image is displayed")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyCoverImage() {
+        profilePageBo.verifyDisplayedImage();
     }
   
     @Test(priority = 1, description = "Verify if button UPSA is active")
