@@ -167,7 +167,7 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getCoverImage() {
         return coverImage;
     }
-  
+
     public PageElement getFeedbackButton() {
         return feedbackButton;
     }
