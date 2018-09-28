@@ -36,9 +36,8 @@ public class DriverManager {
         driver.get().quit();
         driver.remove();
     }
-
+  
     public static WebDriverWait newWait() {
         return new WebDriverWait(getDriver(), WAITING_TIME);
     }
-
 }
