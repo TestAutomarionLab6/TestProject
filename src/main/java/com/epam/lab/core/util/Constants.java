@@ -12,10 +12,10 @@ public class Constants {
     public static final String CSV_PATH = "src/main/resources/user.csv";
     public static final String INVALID_LOGIN = "Vasia_Pupkind@epam.com";
     public static final String INVALID_PASSWORD = "IamVasia666";
+    public static final String ALERT_TITLE_OF_FEEDBACK = "Send us a message";
+    public static final int FEEDBACK_FRAME_NUMBER = 0;
     public static final int WAITING_TIME = 10;
     public static final int NEXT_WINDOW_NUMBER = 1;
     private Constants() {
     }
-
 }
-
