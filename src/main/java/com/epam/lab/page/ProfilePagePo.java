@@ -87,9 +87,8 @@ public class ProfilePagePo extends AbstractPage {
         return profileView;
     }
     
-    public void getAndClickAllContactsButton() {
-    	JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();    	
-    	js.executeScript("arguments[0].click();", allContactsButton);    	   		
+    public WebElement getAllContactsButton() {    	
+    	return allContactsButton;
     }
     
     public PageElement getPhone() {
