@@ -134,11 +134,6 @@ public class ProfilePageBo {
         return String.format("%s%s", firstPart, secondPart);
     }
     
-    @Step("PageElementBO Step:  get and click All Contacts Button...")
-	     public void getAndClickAllContactsButton() {
-		   profilePagePo.getAndClickAllContactsButton();
-	  }
-
     @Step("PageElementBO Step: Verify All Contacts")
     public void verifyPersonalData(String firstAndLastName, String jobTitle, String jobLocation,
     		                       String productionCategory,String jobFunction, String primarySkill ) { 
