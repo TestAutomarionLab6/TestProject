@@ -135,9 +135,10 @@ public class ProfilePageBo {
     }
     
     @Step("PageElementBO Step:  get and click All Contacts Button...")
-	  public void getAndClickAllContactsButton() {
-		profilePagePo.getAndClickAllContactsButton();
-	  }
+    public void getAndClickAllContactsButton() {		
+	JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
+    	js.executeScript("arguments[0].click();", profilePagePo.getAllContactsButton());
+    }
     
     @Step("PageElementBO Step: Verify All Contacts")
     public void verifyAllContacts(String phone, String email, String skype, String email2 ) {    	
