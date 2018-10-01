@@ -91,7 +91,7 @@ public class ProfilePageTest implements ITestNGListener {
     @Severity(SeverityLevel.NORMAL)
     public void verifyPersonalData() {
     	profilePageBo.verifyPersonalData(user.getFirstAndLastName(), user.getJobTitle(), user.getJobLocation(),
-    		user.getProductionCategory(),  user.getJobFunction(), user.getPrimarySkill() );    	
+    		user.getProductionCategory(),  user.getJobFunction(), user.getPrimarySkill() );
     }
     
     @AfterTest

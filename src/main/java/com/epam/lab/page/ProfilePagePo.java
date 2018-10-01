@@ -110,7 +110,7 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getProfileView() {
         return profileView;
     }
-            
+
     public PageElement getPhone() {
         return phone;
     }
@@ -158,10 +158,11 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getNativeName() {
         return nativeName;
     }
-    
+
     public PageElement getCoverImage() {
         return coverImage;
-      
+    }
+
     public PageElement getFeedbackButton() {
         return feedbackButton;
     }
