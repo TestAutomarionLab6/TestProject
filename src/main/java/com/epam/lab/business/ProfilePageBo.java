@@ -132,5 +132,19 @@ public class ProfilePageBo {
 
     public String getFullClassname(String firstPart, String secondPart) {
         return String.format("%s%s", firstPart, secondPart);
+    }    
+    
+    @Step("PageElementBO Step:  get and click All Contacts Button...")
+  	public void clickOnPopoverButton() {
+  		profilePagePo.getPopoverSign().click();
+  	}
+    
+    @Step("PageElementBO Step: Verify the wall page")
+    public void verifyNativeName( String nativeName ) {        
+        softAssertion.assertEquals(nativeName, profilePagePo.getNativeName().getText(), "Native name is't correct");
+        MyLogger.getLogger().info( nativeName.equals(profilePagePo.getNativeName().getText()) ?
+        		"native name is correct" : "native name is't correct");
+        
     }
+   
 }
