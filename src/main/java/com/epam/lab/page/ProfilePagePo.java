@@ -130,10 +130,6 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getEmail2() {
         return email2;
     }
-
-    public PageElement getCoverImage() {
-        return coverImage;
-    }
     
     public PageElement getFirstAndLastName() {
         return firstAndLastName;
