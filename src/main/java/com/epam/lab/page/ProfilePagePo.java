@@ -81,10 +81,11 @@ public class ProfilePagePo extends AbstractPage {
     private PageElement popoverSign; 
     @LogMessage("Native Name")
     @FindBy(xpath = "//div[@class='popover-content']/div[2]")
-    private PageElement nativeName; 
+    private PageElement nativeName;
     @LogMessage("Past Projects Button")
     @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-cv.wfep\"]")
     private PageElement pastProjectsButton;
+    @LogMessage("Past Project View")
     @FindBy(xpath = "//li[@role=\"presentation\"][3]")
     private PageElement pastProjectsView;    
 
@@ -115,7 +116,7 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getProfileView() {
         return profileView;
     }
-        
+
     public PageElement getPhone() {
         return phone;
     }
@@ -170,11 +171,12 @@ public class ProfilePagePo extends AbstractPage {
  
     public PageElement getPastProjectsView() {
         return pastProjectsView;
-    }
-  
+    }  
+
     public PageElement getCoverImage() {
         return coverImage;
-      
+    }
+
     public PageElement getFeedbackButton() {
         return feedbackButton;
     }
