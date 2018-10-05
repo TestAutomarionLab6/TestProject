@@ -5,6 +5,7 @@ public class Constants {
     public static final String DRIVER_PATH = "src/main/resources/chromedriver.exe";
     public static final String LOGIN_PAGE_URL = "https://telescope.epam.com/";
     public static final String PROFILE_PAGE_URL = "https://telescope.epam.com/who/Yevhen_Hrafov";
+    public static final String TRAINING_PAGE_URL = "https://telescope.epam.com/who/?tab=profile";
     public static final String START_CLASSNAME_PROFILE_PAGE = "e3sui";
     public static final String PROFILE_CLASSNAME = "ProfileContent__switcherNavLink active";
     public static final String WALL_CLASSNAME = "ProfileContent__switcherNavLink";
