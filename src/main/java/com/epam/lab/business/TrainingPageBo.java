@@ -23,8 +23,8 @@ public class TrainingPageBo {
         softAssertion = new SoftAssert();
     }
 
-    @Step("PageElementBO Step: Verify the functionality of Professional Training card....")
-    public void verifyTrainingCard() {
+    @Step("PageElementBO Step: Verify the functionality of Professional Training card by type....")
+    public void verifyCardByType() {
         clickOnProfessionGrowth();
         clickOnTrainingCard();
         clickOnSeeMore();
