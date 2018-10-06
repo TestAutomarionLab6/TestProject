@@ -9,6 +9,8 @@ public class Constants {
     public static final String START_CLASSNAME_PROFILE_PAGE = "e3sui";
     public static final String PROFILE_CLASSNAME = "ProfileContent__switcherNavLink active";
     public static final String WALL_CLASSNAME = "ProfileContent__switcherNavLink";
+    public static final String TRAINING_BY_TYPE_CLASSNAME = "InformerQuickView-tabbedView__NavLink";
+    public static final String ACTIVE_IN_CLASSNAME = "active";
     public static final String HOME_PAGE_URL = "https://telescope.epam.com/search/people";
     public static final String CSV_PATH = "src/main/resources/user.csv";
     public static final String INVALID_LOGIN = "Vasia_Pupkind@epam.com";

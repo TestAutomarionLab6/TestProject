@@ -7,7 +7,7 @@ import io.qameta.allure.Step;
 import org.apache.log4j.Level;
 import org.testng.asserts.SoftAssert;
 
-import static com.epam.lab.core.util.Constants.TRAINING_PAGE_URL;
+import static com.epam.lab.core.util.Constants.*;
 
 public class TrainingPageBo {
 
@@ -52,11 +52,15 @@ public class TrainingPageBo {
         trainingPagePo.getByTypeButton().waitUntilVisible().click();
     }
 
-    @Step("PageElementBO Step: Click on 'By type' button......")
+    @Step("PageElementBO Step: Verify if 'By type' button shows on page....")
     public void verifyByType() {
+        String expectedClassname = String.format("%s %s%s",
+                ACTIVE_IN_CLASSNAME, START_CLASSNAME_PROFILE_PAGE, TRAINING_BY_TYPE_CLASSNAME);
+        String currentlyClassname = trainingPagePo.getByTypeButton().getAttribute("class");
         SoftAssert softAssertion = new SoftAssert();
-        softAssertion.assertEquals(trainingPagePo.getByTypeButton().isDisplayed(), true, "The information is not displayed");
-        MyLogger.getLogger().info(trainingPagePo.getByTypeButton().isDisplayed() ?
+        softAssertion.assertEquals(currentlyClassname, expectedClassname, "The information is not displayed");
+        MyLogger.getLogger().info(currentlyClassname.equals(expectedClassname) ?
                 "All training information has been successfully loaded" : "The information is not displayed on page");
+        softAssertion.assertAll();
     }
 }
