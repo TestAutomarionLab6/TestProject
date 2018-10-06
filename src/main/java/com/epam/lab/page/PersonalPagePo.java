@@ -13,7 +13,7 @@ public class PersonalPagePo extends AbstractPage {
     private PageElement personalDataButton;
 
     @LogMessage("Personal card button")
-    @FindBy(xpath = "//div[starts-with(@class,\"Informer---index---root---1L5L2 Informer---index---root_quickViewEnabled\")]")
+    @FindBy(xpath = "//img[starts-with(@class,\"Image---index---image\")]")
     private PageElement personalCard;
 
     @LogMessage("'See more' button")
