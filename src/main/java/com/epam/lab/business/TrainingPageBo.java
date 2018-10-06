@@ -7,6 +7,8 @@ import io.qameta.allure.Step;
 import org.apache.log4j.Level;
 import org.testng.asserts.SoftAssert;
 
+import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
+import static com.epam.lab.core.util.Constants.TRAINING_BY_YEAR_CLASSNAME;
 import static com.epam.lab.core.util.Constants.TRAINING_PAGE_URL;
 
 public class TrainingPageBo {
@@ -52,11 +54,13 @@ public class TrainingPageBo {
         trainingPagePo.getByYearButton().waitUntilVisible().click();
     }
 
-    @Step("PageElementBO Step: Click on 'By year' button......")
+    @Step("PageElementBO Step: Verify if 'By year' button shows on page....")
     public void verifyByYear() {
+        String expectedClassname = START_CLASSNAME_PROFILE_PAGE.concat(TRAINING_BY_YEAR_CLASSNAME);
+        String currentlyClassname = trainingPagePo.getByYearButton().getAttribute("class");
         SoftAssert softAssertion = new SoftAssert();
-        softAssertion.assertEquals(trainingPagePo.getByYearButton().isDisplayed(), true, "The information is not displayed");
-        MyLogger.getLogger().info(trainingPagePo.getByYearButton().isDisplayed() ?
+        softAssertion.assertEquals(currentlyClassname, expectedClassname, "The information is not displayed");
+        MyLogger.getLogger().info(currentlyClassname.equals(expectedClassname) ?
                 "All training information has been successfully loaded" : "The information is not displayed on page");
         softAssertion.assertAll();
     }

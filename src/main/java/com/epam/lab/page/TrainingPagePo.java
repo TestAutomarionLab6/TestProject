@@ -13,7 +13,7 @@ public class TrainingPagePo extends AbstractPage {
     private PageElement profGrowthButton;
 
     @LogMessage("Personal Training card button")
-    @FindBy(xpath = " //*[@class=\"e3suiStylishInformer-lightBottomLine__text eppplTrainingsInformerFront__text\"]")
+    @FindBy(xpath = "//*[starts-with(@class,'"+START_CLASSNAME_PROFILE_PAGE+"StylishInformer-lightBottomLine__text')]")
     private PageElement trainingCard;
 
     @LogMessage("'See more' button")
