@@ -24,8 +24,8 @@ public class PersonalPageBo {
         softAssertion = new SoftAssert();
     }
 
-    @Step("PageElementBO Step: Verify the functionality of Personal card....")
-    public void verifyPersonalCard() {
+    @Step("PageElementBO Step: Verify the functionality of Personal card by general info....")
+    public void verifyCardByGeneralInfo() {
         clickOnPersonalData();
         clickOnPersonalCard();
         clickOnSeeMore();

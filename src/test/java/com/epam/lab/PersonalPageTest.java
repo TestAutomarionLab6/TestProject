@@ -37,7 +37,7 @@ public class PersonalPageTest implements ITestNGListener {
     @Description("TrainingPageTest Description: Verify the functionality of Personal card....")
     @Severity(SeverityLevel.NORMAL)
     public void verifyTrainingCard() {
-        personalPageBo.verifyPersonalCard();
+        personalPageBo.verifyCardByGeneralInfo();
     }
 
     @AfterTest
