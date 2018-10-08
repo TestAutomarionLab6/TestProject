@@ -7,3 +7,4 @@ allure-results/*
 .project
 test-output/*
 logs.log
+src/main/resources/user.csv
