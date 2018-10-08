@@ -86,13 +86,12 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.verifyFeedbackButton();
     }
 
-    @Test(priority = 0, description = "Verify Native Name")
-    @Description("ProfileTest Description: Verify Native Name after click on popover sign near First and Last Name")
+    @Test(priority = 0, description = "Verify if data on profile page comply with person data")
+    @Description("ProfileTest Description: Verify if data on profile page comply with person data")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyNativeName() { 
-    	profilePageBo.clickOnPopoverButton();
-    	profilePageBo.verifyNativeName( user.getNativeName() );
-    	profilePageBo.clickOnPopoverButton();    	
+    public void verifyPersonalData() {
+    	profilePageBo.verifyPersonalData(user.getFirstAndLastName(), user.getJobTitle(), user.getJobLocation(),
+    		user.getProductionCategory(),  user.getJobFunction(), user.getPrimarySkill() );
     }
     
     @AfterTest
