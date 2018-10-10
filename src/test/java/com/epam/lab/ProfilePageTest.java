@@ -78,6 +78,18 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
     }
+    
+    @Test(priority = 0, description = "Verify if button All Contacts is active and with right info")		
+    @Description("ProfileTest Description: Verify if data in All Contacts comply with personal data")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyAllContacts() {
+    	profilePageBo.getAndClickAllContactsButton();
+    	Assert.assertEquals( user.getPhone(), profilePageBo.getPhone());    	
+    	Assert.assertEquals( user.getEmail(), profilePageBo.getEmail());    	
+    	Assert.assertEquals( user.getSkype(), profilePageBo.getSkype());    	
+    	Assert.assertEquals( user.getEmail2(), profilePageBo.getEmail2());
+    	profilePageBo.getAndClickAllContactsButton();
+    } 
   
     @Test(priority = 5, description = "Verify if Feedback button shows feedback window")
     @Description("ProfileTest Description: Verify if Feedback button shows feedback window")
@@ -86,13 +98,12 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.verifyFeedbackButton();
     }
 
-    @Test(priority = 0, description = "Verify Native Name")
-    @Description("ProfileTest Description: Verify Native Name after click on popover sign near First and Last Name")
+    @Test(priority = 0, description = "Verify if data on profile page comply with person data")
+    @Description("ProfileTest Description: Verify if data on profile page comply with person data")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyNativeName() { 
-    	profilePageBo.clickOnPopoverButton();
-    	profilePageBo.verifyNativeName( user.getNativeName() );
-    	profilePageBo.clickOnPopoverButton();    	
+    public void verifyPersonalData() {
+    	profilePageBo.verifyPersonalData(user.getFirstAndLastName(), user.getJobTitle(), user.getJobLocation(),
+    		user.getProductionCategory(),  user.getJobFunction(), user.getPrimarySkill() );
     }
     
     @AfterTest
