@@ -38,6 +38,7 @@ public class TrainingPageTest implements ITestNGListener {
     @Severity(SeverityLevel.NORMAL)
     public void verifyTrainingCard() {
         trainingPageBo.verifyCardByYear();
+        trainingPageBo.verifyCardByType();
     }
 
     @AfterTest

@@ -1,10 +1,7 @@
 package com.epam.lab.page;
 
-import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.LogMessage;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -45,7 +42,10 @@ public class ProfilePagePo extends AbstractPage {
     private PageElement wallButton;
     @LogMessage("All Contacts button")    
     @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")    
-    private WebElement allContactsButton;    
+    private WebElement allContactsButton;
+    @LogMessage("All Contacts button list")    
+    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")    
+    private List<WebElement> allContactsButtonList;
     @LogMessage("Phone")
     @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[1]/span[2]")
     private PageElement phone;
@@ -110,7 +110,11 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getProfileView() {
         return profileView;
     }
-      
+    
+    public List<WebElement> getAllContactsButtonList() {    	
+    	return allContactsButtonList;
+    }   
+
     public PageElement getPhone() {
         return phone;
     }

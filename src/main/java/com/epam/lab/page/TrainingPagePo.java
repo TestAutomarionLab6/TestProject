@@ -24,6 +24,10 @@ public class TrainingPagePo extends AbstractPage {
     @FindBy(xpath = "//*[@class='"+START_CLASSNAME_PROFILE_PAGE+"InformerQuickView-tabbedView__NavLink']")
     private PageElement byYearButton;
 
+    @LogMessage("'By type' button")
+    @FindBy(xpath = "//*[@class='active "+START_CLASSNAME_PROFILE_PAGE+"InformerQuickView-tabbedView__NavLink']")
+    private PageElement byTypeButton;
+
     public PageElement getProfGrowthButton() {
         return profGrowthButton;
     }
@@ -38,5 +42,9 @@ public class TrainingPagePo extends AbstractPage {
 
     public PageElement getByYearButton() {
         return byYearButton;
+    }
+  
+    public PageElement getByTypeButton() {
+        return byTypeButton;
     }
 }

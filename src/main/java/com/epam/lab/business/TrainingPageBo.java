@@ -7,9 +7,7 @@ import io.qameta.allure.Step;
 import org.apache.log4j.Level;
 import org.testng.asserts.SoftAssert;
 
-import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
-import static com.epam.lab.core.util.Constants.TRAINING_BY_YEAR_CLASSNAME;
-import static com.epam.lab.core.util.Constants.TRAINING_PAGE_URL;
+import static com.epam.lab.core.util.Constants.*;
 
 public class TrainingPageBo {
 
@@ -32,6 +30,15 @@ public class TrainingPageBo {
         clickOnSeeMore();
         clickOnByYear();
         verifyByYear();
+    }
+  
+    @Step("PageElementBO Step: Verify the functionality of Professional Training card by type....")
+    public void verifyCardByType() {
+        clickOnProfessionGrowth();
+        clickOnTrainingCard();
+        clickOnSeeMore();
+        clickOnByType();
+        verifyByType();
     }
 
     @Step("PageElementBO Step: Click on 'Professional Growth' informer....")
@@ -58,6 +65,18 @@ public class TrainingPageBo {
     public void verifyByYear() {
         String expectedClassname = START_CLASSNAME_PROFILE_PAGE.concat(TRAINING_BY_YEAR_CLASSNAME);
         String currentlyClassname = trainingPagePo.getByYearButton().getAttribute("class");
+    }
+  
+    @Step("PageElementBO Step: Click on 'By type' button...")
+    public void clickOnByType() {
+        trainingPagePo.getByTypeButton().waitUntilVisible().click();
+    }
+
+    @Step("PageElementBO Step: Verify if 'By type' button shows on page....")
+    public void verifyByType() {
+        String expectedClassname = String.format("%s %s%s",
+                ACTIVE_IN_CLASSNAME, START_CLASSNAME_PROFILE_PAGE, TRAINING_BY_TYPE_CLASSNAME);
+        String currentlyClassname = trainingPagePo.getByTypeButton().getAttribute("class");
         SoftAssert softAssertion = new SoftAssert();
         softAssertion.assertEquals(currentlyClassname, expectedClassname, "The information is not displayed");
         MyLogger.getLogger().info(currentlyClassname.equals(expectedClassname) ?

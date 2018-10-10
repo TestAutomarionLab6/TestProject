@@ -26,11 +26,11 @@ public class ProfilePageBo {
     }
 
     @Step("PageElementBO Step: Verify if cover image is displayed...")
-    public void verifyDisplayedImage() {
-        SoftAssert softAssertion = new SoftAssert();
+    public void verifyDisplayedImage() {        
         softAssertion.assertEquals(isDisplayed(), true, "The cover image is not displayed");
         MyLogger.getLogger().info(isDisplayed() ?
                 "The cover image has been successfully loaded" : "The cover image is not displayed");
+        softAssertion.assertAll();
     }
 
     @Step("PageElementBO Step: Check image display...")
@@ -115,6 +115,7 @@ public class ProfilePageBo {
         softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME), "Classname is same");
         MyLogger.getLogger().info(profileClassName.equals(getFullClassname(START_CLASSNAME_PROFILE_PAGE, PROFILE_CLASSNAME)) ?
                 "Classname is not same!" : "Successfully goes to the profile page");
+        softAssertion.assertAll();
     }
 
     @Step("PageElementBO Step: Click on Wall button...")
@@ -128,6 +129,7 @@ public class ProfilePageBo {
         softAssertion.assertEquals(profileClassName, getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME), "Classname is same");
         MyLogger.getLogger().info(profileClassName.equals(getFullClassname(START_CLASSNAME_PROFILE_PAGE, WALL_CLASSNAME)) ?
                 "Classname is not same!" : "Successfully goes to the wall page");
+        softAssertion.assertAll();
     }
 
     public String getFullClassname(String firstPart, String secondPart) {
@@ -139,12 +141,81 @@ public class ProfilePageBo {
   		profilePagePo.getPopoverSign().click();
   	}
     
-    @Step("PageElementBO Step: Verify the wall page")
+    @Step("PageElementBO Step: Verify the native name")
     public void verifyNativeName( String nativeName ) {        
         softAssertion.assertEquals(nativeName, profilePagePo.getNativeName().getText(), "Native name is't correct");
         MyLogger.getLogger().info( nativeName.equals(profilePagePo.getNativeName().getText()) ?
-        		"native name is correct" : "native name is't correct");
-        
+        		"native name is correct" : "native name is't correct");   
+        softAssertion.assertAll();
     }
-   
+
+    @Step("PageElementBO Step:  get and click All Contacts Button...")
+    public void getAndClickAllContactsButton() {		
+	      profilePagePo.getAllContactsButtonList().get(0).click();
+    }
+    
+    @Step("PageElementBO Step: Verify All Contacts")
+    public void verifyAllContacts(String phone, String email, String skype, String email2 ) {    	
+        softAssertion.assertEquals(phone, profilePagePo.getPhone().getText(), "Phone number is't correct");
+        MyLogger.getLogger().info( phone.equals(profilePagePo.getPhone().getText()) ? 
+        		                   "phone number is correct" : "phone number is't correct");
+        softAssertion.assertEquals(email, profilePagePo.getEmail().getText(), "Email is't correct");
+        MyLogger.getLogger().info( email.equals(profilePagePo.getEmail().getText()) ? 
+        		                   "email number is correct" : "email number is't correct");
+        softAssertion.assertEquals(skype, profilePagePo.getSkype().getText(), "Skype is't correct");
+        MyLogger.getLogger().info( skype.equals(profilePagePo.getSkype().getText()) ?
+        		                   "skype number is correct" : "skype number is't correct");
+        softAssertion.assertEquals(email2, profilePagePo.getEmail2().getText(), "Email2 number is't correct");
+        MyLogger.getLogger().info( email2.equals(profilePagePo.getEmail2().getText()) ?
+        		                   "email2 number is correct" : "email2 number is't correct");
+        softAssertion.assertAll();
+    } 
+
+
+    @Step("PageElementBO Step: Verify All Contacts")
+    public void verifyPersonalData(String firstAndLastName, String jobTitle, String jobLocation,
+    		                       String productionCategory,String jobFunction, String primarySkill ) { 
+    	
+        softAssertion.assertEquals(firstAndLastName, profilePagePo.getFirstAndLastName().getText(), "First And Last Name is't correct");
+        MyLogger.getLogger().info( firstAndLastName.equals(profilePagePo.getFirstAndLastName().getText()) ? 
+        		                   "FirstAndLastName is correct" : "FirstAndLastName is't correct");
+        
+        softAssertion.assertEquals(jobTitle, profilePagePo.getJobTitle().getText(), "jobTitle is't correct");
+        MyLogger.getLogger().info( jobTitle.equals(profilePagePo.getJobTitle().getText()) ? 
+        		                   "jobTitle number is correct" : "jobTitle number is't correct");
+        
+        softAssertion.assertEquals(jobLocation, profilePagePo.getJobLocation().getText(), "jobLocation is't correct");
+        MyLogger.getLogger().info( jobLocation.equals(profilePagePo.getJobLocation().getText()) ?
+        		                   "jobLocation is correct" : "jobLocation is't correct");
+        
+        softAssertion.assertEquals(productionCategory, profilePagePo.getProductionCategory().getText(), "productionCategory is't correct");
+        MyLogger.getLogger().info( productionCategory.equals(profilePagePo.getProductionCategory().getText()) ?
+        		                   "productionCategory is correct" : "productionCategory is't correct");
+        
+        softAssertion.assertTrue( isJobFunctionCorrect(jobFunction), "jobFunction is't correct");
+        MyLogger.getLogger().info( isJobFunctionCorrect(jobFunction) ?
+        		                   "jobFunction is correct" : "jobFunction is't correct");
+        
+        softAssertion.assertEquals(primarySkill, profilePagePo.getPrimarySkill().getText(), "primarySkill is't correct");
+        MyLogger.getLogger().info( primarySkill.equals(profilePagePo.getPrimarySkill().getText()) ?
+        		                   "primarySkill is correct" : "primarySkill is't correct");
+        softAssertion.assertAll();
+    }
+    
+    public boolean isJobFunctionCorrect(String jobFunction) {
+		String strFromProfile = profilePagePo.getJobFunction().getText();			
+		if (jobFunction.length() - 1 == strFromProfile.length()) {			
+			for (int i = 0; i < strFromProfile.length(); i++) {
+				if (jobFunction.charAt(i) == '\\')
+					continue;
+				if (jobFunction.charAt(i) != strFromProfile.charAt(i)) {					
+					return false;
+				}				
+			}			
+			return true;
+		} else
+		return false;
+	} 
+
 }
+
