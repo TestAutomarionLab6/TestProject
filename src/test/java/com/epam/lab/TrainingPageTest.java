@@ -37,6 +37,7 @@ public class TrainingPageTest implements ITestNGListener {
     @Description("TrainingPageTest Description: Verify the functionality of Professional Training card....")
     @Severity(SeverityLevel.NORMAL)
     public void verifyTrainingCard() {
+        trainingPageBo.verifyCardByYear();
         trainingPageBo.verifyCardByType();
     }
 

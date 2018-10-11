@@ -20,6 +20,10 @@ public class TrainingPagePo extends AbstractPage {
     @FindBy(xpath = "(//*[starts-with(@class,'Informer---index---disDraggableButton')])[1]")
     private PageElement seeMoreButton;
 
+    @LogMessage("'By year' button")
+    @FindBy(xpath = "//*[@class='"+START_CLASSNAME_PROFILE_PAGE+"InformerQuickView-tabbedView__NavLink']")
+    private PageElement byYearButton;
+
     @LogMessage("'By type' button")
     @FindBy(xpath = "//*[@class='active "+START_CLASSNAME_PROFILE_PAGE+"InformerQuickView-tabbedView__NavLink']")
     private PageElement byTypeButton;
@@ -36,6 +40,10 @@ public class TrainingPagePo extends AbstractPage {
         return seeMoreButton;
     }
 
+    public PageElement getByYearButton() {
+        return byYearButton;
+    }
+  
     public PageElement getByTypeButton() {
         return byTypeButton;
     }
