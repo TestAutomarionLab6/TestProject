@@ -5,6 +5,8 @@ import com.epam.lab.core.util.LogMessage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
 
 public class ProfilePagePo extends AbstractPage {
@@ -40,12 +42,12 @@ public class ProfilePagePo extends AbstractPage {
     @LogMessage("Wall button")
     @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-wallview.wfep\"]")
     private PageElement wallButton;
-    @LogMessage("All Contacts button")    
-    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")    
+    @LogMessage("All Contacts button")
+    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")
     private WebElement allContactsButton;
-    @LogMessage("All Contacts button list")    
-    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")    
-    private List<WebElement> allContactsButtonList;
+    @LogMessage("All Contacts button list")
+    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")
+    private List<PageElement> allContactsButtonList;
     @LogMessage("Phone")
     @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[1]/span[2]")
     private PageElement phone;
@@ -78,7 +80,7 @@ public class ProfilePagePo extends AbstractPage {
     private PageElement primarySkill;
     @LogMessage("Popover button")
     @FindBy(xpath = "//*[@id=\"rgn___epam_people_profile_v-eppplGeneralInfo\"]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/h1[1]/span[2]")
-    private PageElement popoverSign; 
+    private PageElement popoverSign;
     @LogMessage("Native Name")
     @FindBy(xpath = "//div[@class='popover-content']/div[2]")
     private PageElement nativeName;
@@ -87,7 +89,7 @@ public class ProfilePagePo extends AbstractPage {
     private PageElement pastProjectsButton;
     @LogMessage("Past Project View")
     @FindBy(xpath = "//li[@role=\"presentation\"][3]")
-    private PageElement pastProjectsView;    
+    private PageElement pastProjectsView;
 
     public PageElement getUPSAButton() {
         return upsaButton;
@@ -116,55 +118,55 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getProfileView() {
         return profileView;
     }
-    
-    public List<WebElement> getAllContactsButtonList() {    	
-    	return allContactsButtonList;
-    }   
+
+    public List<PageElement> getAllContactsButtonList() {
+        return allContactsButtonList;
+    }
 
     public PageElement getPhone() {
         return phone;
     }
-    
+
     public PageElement getEmail() {
         return email;
     }
-    
+
     public PageElement getSkype() {
         return skype;
     }
-    
+
     public PageElement getEmail2() {
         return email2;
     }
-    
+
     public PageElement getFirstAndLastName() {
         return firstAndLastName;
     }
-    
+
     public PageElement getJobTitle() {
         return jobTitle;
     }
-    
+
     public PageElement getJobLocation() {
         return jobLocation;
     }
-    
+
     public PageElement getProductionCategory() {
         return productionCategory;
     }
-    
+
     public PageElement getJobFunction() {
         return jobFunction;
     }
-    
+
     public PageElement getPrimarySkill() {
         return primarySkill;
     }
-    
+
     public PageElement getPopoverSign() {
         return popoverSign;
     }
-    
+
     public PageElement getNativeName() {
         return nativeName;
     }

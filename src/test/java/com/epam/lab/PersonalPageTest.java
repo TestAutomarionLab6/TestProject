@@ -1,7 +1,7 @@
 package com.epam.lab;
 
 import com.epam.lab.business.LoginPageBo;
-import com.epam.lab.business.TrainingPageBo;
+import com.epam.lab.business.PersonalPageBo;
 import com.epam.lab.core.driver.DriverManager;
 import com.epam.lab.core.util.CsvParser;
 import com.epam.lab.core.util.User;
@@ -18,9 +18,9 @@ import org.testng.annotations.Test;
 import static com.epam.lab.core.util.Constants.CSV_PATH;
 
 @Listeners({TestListener.class})
-public class TrainingPageTest implements ITestNGListener {
+public class PersonalPageTest implements ITestNGListener {
 
-    private TrainingPageBo trainingPageBo;
+    private PersonalPageBo personalPageBo;
     private LoginPageBo loginPageBo;
     private User user;
 
@@ -30,15 +30,14 @@ public class TrainingPageTest implements ITestNGListener {
         user = CsvParser.createObjectsFromCsv(CSV_PATH);
         loginPageBo = new LoginPageBo();
         loginPageBo.logIn(user.getLogin(), user.getPassword());
-        trainingPageBo = new TrainingPageBo();
+        personalPageBo = new PersonalPageBo();
     }
 
-    @Test(description = "Verify the functionality of Professional Training card....")
-    @Description("TrainingPageTest Description: Verify the functionality of Professional Training card....")
+    @Test(description = "Verify the functionality of Personal card....")
+    @Description("TrainingPageTest Description: Verify the functionality of Personal card....")
     @Severity(SeverityLevel.NORMAL)
     public void verifyTrainingCard() {
-        trainingPageBo.verifyCardByYear();
-        trainingPageBo.verifyCardByType();
+        personalPageBo.verifyCardByGeneralInfo();
     }
 
     @AfterTest
