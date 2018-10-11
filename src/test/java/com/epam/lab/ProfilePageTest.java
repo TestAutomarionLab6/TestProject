@@ -9,6 +9,7 @@ import com.epam.lab.core.util.reportListeners.TestListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.testng.Assert;
 import org.testng.ITestNGListener;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -40,7 +41,7 @@ public class ProfilePageTest implements ITestNGListener {
     public void verifyCoverImage() {
         profilePageBo.verifyDisplayedImage();
     }
-  
+
     @Test(priority = 1, description = "Verify if button UPSA is active")
     @Description("ProfileTest Description: Verify if button UPSA is active")
     @Severity(SeverityLevel.NORMAL)
@@ -78,19 +79,15 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
     }
-    
-    @Test(priority = 0, description = "Verify if button All Contacts is active and with right info")		
+
+    @Test(priority = 0, description = "Verify if button All Contacts is active and with right info")
     @Description("ProfileTest Description: Verify if data in All Contacts comply with personal data")
     @Severity(SeverityLevel.NORMAL)
     public void verifyAllContacts() {
-    	profilePageBo.getAndClickAllContactsButton();
-    	Assert.assertEquals( user.getPhone(), profilePageBo.getPhone());    	
-    	Assert.assertEquals( user.getEmail(), profilePageBo.getEmail());    	
-    	Assert.assertEquals( user.getSkype(), profilePageBo.getSkype());    	
-    	Assert.assertEquals( user.getEmail2(), profilePageBo.getEmail2());
-    	profilePageBo.getAndClickAllContactsButton();
-    } 
-  
+        profilePageBo.getAndClickAllContactsButton();
+        profilePageBo.verifyAllContacts(user.getPhone(), user.getEmail(), user.getSkype(), user.getEmail2());
+    }
+
     @Test(priority = 5, description = "Verify if Feedback button shows feedback window")
     @Description("ProfileTest Description: Verify if Feedback button shows feedback window")
     @Severity(SeverityLevel.NORMAL)
@@ -102,10 +99,10 @@ public class ProfilePageTest implements ITestNGListener {
     @Description("ProfileTest Description: Verify if data on profile page comply with person data")
     @Severity(SeverityLevel.NORMAL)
     public void verifyPersonalData() {
-    	profilePageBo.verifyPersonalData(user.getFirstAndLastName(), user.getJobTitle(), user.getJobLocation(),
-    		user.getProductionCategory(),  user.getJobFunction(), user.getPrimarySkill() );
+        profilePageBo.verifyPersonalData(user.getFirstAndLastName(), user.getJobTitle(), user.getJobLocation(),
+                user.getProductionCategory(), user.getJobFunction(), user.getPrimarySkill());
     }
-    
+
     @AfterTest
     @Description("Exit from program")
     public void quit() {
