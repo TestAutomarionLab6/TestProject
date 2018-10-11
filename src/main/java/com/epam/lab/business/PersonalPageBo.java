@@ -67,14 +67,14 @@ public class PersonalPageBo {
         softAssertion.assertAll();
     }
 
-    @Step("PageElementBO Step: Verify the functionality of Personal card by emergency contacts....")
-    public void verifyCardByValidEmergencyContacts() {
+    @Step("PageElementBO Step: Verify the functionality of Personal card by invalid emergency contacts....")
+    public void verifyCardByInvalidEmergencyContacts() {
         clickOnEmergencyContacts();
         verifyEmergencyContacts();
         initialNumberRows = calcInitialNumberRows();
-        inputFirstName(VALID_NAME_EMERGENCY_CONTACT);
-        inputRelationship(VALID_RELATIONSHIP_EMERGENCY_CONTACT);
-        inputPhone(VALID_PHOME_EMERGENCY_CONTACT);
+        inputFirstName(INVALID_NAME_EMERGENCY_CONTACT);
+        inputRelationship(INVALID_RELATIONSHIP_EMERGENCY_CONTACT);
+        inputPhone(INVALID_PHOME_EMERGENCY_CONTACT);
         clickOnAdd();
         newInitialNumberRows = calcInitialNumberRows();
         verifyContactTable();
