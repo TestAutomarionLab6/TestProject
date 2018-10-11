@@ -38,7 +38,7 @@ public class PersonalPageTest implements ITestNGListener {
     @Severity(SeverityLevel.NORMAL)
     public void verifyTrainingCard() {
         personalPageBo.verifyCardByGeneralInfo();
-        personalPageBo.verifyCardByInvalidEmergencyContacts();
+        personalPageBo.verifyDeletingEmergencyContacts();
     }
 
     @AfterTest
