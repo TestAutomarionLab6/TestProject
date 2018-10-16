@@ -22,6 +22,11 @@ public class Constants {
     public static final int WAITING_TIME = 10;
     public static final int NEXT_WINDOW_NUMBER = 1;
     public static final String PERSONAL_DATA_FOOTER="Please visit UPSA if you?d like to update data.";
+    public static final String PERSONAL_DATA_SECOND_FOOTER="Contacts here are vitally important for emergency cases; they are visible only to your RM and HR.";
+    public static final String VALID_NAME_EMERGENCY_CONTACT="Slavko";
+    public static final String VALID_RELATIONSHIP_EMERGENCY_CONTACT="kum";
+    public static final String VALID_PHOME_EMERGENCY_CONTACT="+380505050505";
+    public static final int ADDITIONAL_NUMBER = 1;
     private Constants() {
     }
 }
