@@ -129,4 +129,27 @@ public class PersonalPageBo {
                 "All personal information has been successfully loaded" : "The information is not displayed on page");
         softAssertion.assertAll();
     }
+
+    @Step("PageElementBO Step: Verify the removal of the emergency contact....")
+    public void verifyDeletingEmergencyContacts() {
+        initialNumberRows = calcInitialNumberRows();
+        clickOnDelete();
+        newInitialNumberRows = calcInitialNumberRows();
+        verifyTableAfterDeletingData();
+    }
+
+    @Step("PageElementBO Step: Click on delete button....")
+    public void clickOnDelete() {
+        personalPagePo.getDeleteButton().click();
+    }
+
+    @Step("PageElementBO Step: Verify if the data is removed to the table...")
+    public void verifyTableAfterDeletingData() {
+        SoftAssert softAssertion = new SoftAssert();
+        softAssertion.assertEquals(newInitialNumberRows, initialNumberRows - ADDITIONAL_NUMBER,
+                "The information is not displayed on table");
+        MyLogger.getLogger().info((newInitialNumberRows == initialNumberRows - ADDITIONAL_NUMBER) ?
+                "All personal information has been successfully deleted from table" : "The information is not displayed on page");
+        softAssertion.assertAll();
+    }
 }

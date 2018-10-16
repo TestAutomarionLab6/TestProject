@@ -59,6 +59,10 @@ public class PersonalPagePo extends AbstractPage {
     @FindBy(xpath = "(//*[starts-with(@class,'QuickView---index---tableFooter')])[2]")
     private PageElement secondFooterLabel;
 
+    @LogMessage("'Delete' button")
+    @FindBy(xpath = "//*[starts-with(@class,'QuickView---index---removeContact')]")
+    private PageElement deleteButton;
+
     public PageElement getPersonalDataButton() {
         return personalDataButton;
     }
@@ -100,4 +104,9 @@ public class PersonalPagePo extends AbstractPage {
     public List<PageElement> getContactTableRow() {
         return contactTableRow;
     }
+
+    public PageElement getDeleteButton(){
+        return deleteButton;
+    }
+
 }
