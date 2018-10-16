@@ -79,14 +79,14 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.clickOnWallButton();
         profilePageBo.verifyWallPage();
     }
-
-    @Test(priority = 0, description = "Verify if button All Contacts is active and with right info")
-    @Description("ProfileTest Description: Verify if data in All Contacts comply with personal data")
+ 
+    @Test(priority = 0, description = "Verify if PAST PROJECTS button shows past projects")
+    @Description("ProfileTest Description: Verify if PAST PROJECTS button shows past projects")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyAllContacts() {
-        profilePageBo.getAndClickAllContactsButton();
-        profilePageBo.verifyAllContacts(user.getPhone(), user.getEmail(), user.getSkype(), user.getEmail2());
-    }
+    public void verifyPastProjectsButton() { 
+    	profilePageBo.clickOnPastProjectsButton();
+    	profilePageBo.verifyPastProjectsPage();    	  	
+    }  
 
     @Test(priority = 5, description = "Verify if Feedback button shows feedback window")
     @Description("ProfileTest Description: Verify if Feedback button shows feedback window")
