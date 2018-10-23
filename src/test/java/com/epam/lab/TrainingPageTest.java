@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static com.epam.lab.core.util.Constants.CSV_PATH;
+import static com.epam.lab.core.util.Constants.CREDENTIALS_CSV_PATH;
 
 @Listeners({TestListener.class})
 public class TrainingPageTest implements ITestNGListener {
@@ -27,7 +27,7 @@ public class TrainingPageTest implements ITestNGListener {
     @BeforeTest
     @Description("Loading configurations before test")
     public void setup() {
-        user = CsvParser.createObjectsFromCsv(CSV_PATH);
+        user = CsvParser.createObjectsFromCredCsv(CREDENTIALS_CSV_PATH);
         loginPageBo = new LoginPageBo();
         loginPageBo.logIn(user.getLogin(), user.getPassword());
         trainingPageBo = new TrainingPageBo();
@@ -37,8 +37,8 @@ public class TrainingPageTest implements ITestNGListener {
     @Description("TrainingPageTest Description: Verify the functionality of Professional Training card....")
     @Severity(SeverityLevel.NORMAL)
     public void verifyTrainingCard() {
-        trainingPageBo.verifyCardByYear();
         trainingPageBo.verifyCardByType();
+        trainingPageBo.verifyCardByYear();
     }
 
     @AfterTest

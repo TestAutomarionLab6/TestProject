@@ -13,19 +13,19 @@ public class TrainingPagePo extends AbstractPage {
     private PageElement profGrowthButton;
 
     @LogMessage("Personal Training card button")
-    @FindBy(xpath = "//*[starts-with(@class,'"+START_CLASSNAME_PROFILE_PAGE+"StylishInformer-lightBottomLine__text')]")
+    @FindBy(xpath = "//*[starts-with(@class,'" + START_CLASSNAME_PROFILE_PAGE + "StylishInformer-lightBottomLine__text')]")
     private PageElement trainingCard;
 
     @LogMessage("'See more' button")
-    @FindBy(xpath = "(//*[starts-with(@class,'Informer---index---disDraggableButton')])[1]")
+    @FindBy(xpath = "(//*[starts-with(@class,'Informer---index---disDraggableButton')])[2]")
     private PageElement seeMoreButton;
 
     @LogMessage("'By year' button")
-    @FindBy(xpath = "//*[@class='"+START_CLASSNAME_PROFILE_PAGE+"InformerQuickView-tabbedView__NavLink']")
+    @FindBy(xpath = "//*[@class='" + START_CLASSNAME_PROFILE_PAGE + "InformerQuickView-tabbedView__NavLink']")
     private PageElement byYearButton;
 
     @LogMessage("'By type' button")
-    @FindBy(xpath = "//*[@class='active "+START_CLASSNAME_PROFILE_PAGE+"InformerQuickView-tabbedView__NavLink']")
+    @FindBy(xpath = "//*[@class='active " + START_CLASSNAME_PROFILE_PAGE + "InformerQuickView-tabbedView__NavLink']")
     private PageElement byTypeButton;
 
     public PageElement getProfGrowthButton() {
@@ -43,7 +43,7 @@ public class TrainingPagePo extends AbstractPage {
     public PageElement getByYearButton() {
         return byYearButton;
     }
-  
+
     public PageElement getByTypeButton() {
         return byTypeButton;
     }
