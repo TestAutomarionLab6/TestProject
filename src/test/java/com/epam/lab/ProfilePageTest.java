@@ -56,17 +56,6 @@ public class ProfilePageTest implements ITestNGListener {
         profilePageBo.switchToTelescope();
     }
 
-   /* @Test(description = "Verify if Heroes button is active")
-    @Description("ProfileTest Description: Verify if button Heroes is active")
-    @Severity(SeverityLevel.NORMAL)
-    public void verifyHeroesButton() {
-        profilePageBo.clickOnHeroesButton();
-        profilePageBo.switchToHeroes();
-        profilePageBo.waitHeroesLogo();
-        profilePageBo.verifyHeroesButton();
-        profilePageBo.switchToTelescope();
-    }
-*/
     @Test(description = "Verify if Profile button shows a profile page")
     @Description("ProfileTest Description: Verify if Profile button shows a profile page")
     @Severity(SeverityLevel.NORMAL)
