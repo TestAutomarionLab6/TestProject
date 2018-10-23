@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
-
 public class PersonalPagePo extends AbstractPage {
 
     @LogMessage("Personal data tab button")
@@ -83,11 +81,17 @@ public class PersonalPagePo extends AbstractPage {
         return footerLabel;
     }
 
-    public PageElement getEmergencyContactsButton(){ return emergencyContactsButton; }
+    public PageElement getEmergencyContactsButton() {
+        return emergencyContactsButton;
+    }
 
-    public PageElement getSecondFooterLabel(){ return secondFooterLabel; }
+    public PageElement getSecondFooterLabel() {
+        return secondFooterLabel;
+    }
 
-    public PageElement getNameInput() { return nameInput; }
+    public PageElement getNameInput() {
+        return nameInput;
+    }
 
     public PageElement getDescriptionInput() {
         return descriptionInput;
@@ -105,7 +109,7 @@ public class PersonalPagePo extends AbstractPage {
         return contactTableRow;
     }
 
-    public PageElement getDeleteButton(){
+    public PageElement getDeleteButton() {
         return deleteButton;
     }
 

@@ -16,77 +16,102 @@ public class ProfilePagePo extends AbstractPage {
             "LocationCoverImage__imageBlock_image " + START_CLASSNAME_PROFILE_PAGE +
             "LocationCoverImage__imageBlock_image-loaded\"]")
     private PageElement coverImage;
+
     @LogMessage("Feedback button")
     @FindBy(xpath = "//*[@id=\"uservoice-custom-widget\"]")
     private PageElement feedbackButton;
+
+    @LogMessage("Feedback close button")
+    @FindBy(xpath = "//*[@aria-label='Close Feedback Widget']")
+    private PageElement feedbackCloseButton;
+
     @LogMessage("Title label")
     @FindBy(xpath = "//h1[@class=\"pane-title\"]")
     private PageElement titleLabel;
+
     @LogMessage("UPSA button")
     @FindBy(xpath = "//*[@class=\"" + START_CLASSNAME_PROFILE_PAGE + "EntryLinks__adapters\"]")
     private PageElement upsaButton;
+
     @LogMessage("UPSA logo")
     @FindBy(id = "upsaLogo")
     private PageElement upsaLogo;
+
     @LogMessage("Heroes button")
-    @FindBy(xpath = "//*[@class=\"" + START_CLASSNAME_PROFILE_PAGE + "EntryLinks__socialIconContainer\"]")
+    @FindBy(xpath = "//*[@data-type=\"hero.epam.com\"]")
     private PageElement heroesButton;
+
     @LogMessage("Heroes logo")
     @FindBy(xpath = "//*[@id=\"profileBlock\"]/div/div[2]/img")
     private PageElement heroesLogo;
+
     @LogMessage("Profile button")
-    @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-informers.wfep\"]")
+    @FindBy(xpath = "(//*[@class=\"e3suiProfileContent__switcherNavLink\"])[1]")
     private PageElement profileButton;
+
     @FindBy(xpath = "//li[@role=\"presentation\"][1]")
     private PageElement profileView;
+
     @LogMessage("Wall button")
-    @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-wallview.wfep\"]")
+    @FindBy(xpath = "(//*[@class=\"e3suiProfileContent__switcherNavLink\"])[1]")
     private PageElement wallButton;
+
     @LogMessage("All Contacts button")
-    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")
-    private WebElement allContactsButton;
-    @LogMessage("All Contacts button list")
-    @FindBy(xpath = "//*[@class=\"v-eppplGeneralInfo__photoButtons e3suiGeneralInfo-stylishTemplate__entryInfoLeft\"]/div[2]/div[1]")
-    private List<PageElement> allContactsButtonList;
+    @FindBy(xpath = "//*[@class='v-eppplGeneralInfo__personContactsDesktop']")
+    private PageElement allContactsButton;
+
     @LogMessage("Phone")
-    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[1]/span[2]")
+    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[1]")
     private PageElement phone;
+
     @LogMessage("Email")
-    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[2]/span[2]")
+    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[2]")
     private PageElement email;
+
     @LogMessage("Skype")
-    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[3]/span[2]")
+    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[3]")
     private PageElement skype;
-    @LogMessage("Email2")
-    @FindBy(xpath = "//*[@id=\"popover-positioned-bottom\"]/div[2]/div/a[4]/span[2]")
-    private PageElement email2;
+
+    @LogMessage("Skype for business")
+    @FindBy(xpath = "(//*[starts-with(@class,\"PersonContactsPopover---index---item---\")]/span[2])[4]")
+    private PageElement skypeForBusiness;
+
     @LogMessage("First And LastName")
     @FindBy(xpath = "//span[@class='v-eppplGeneralInfo__nameText false']")
     private PageElement firstAndLastName;
+
     @LogMessage("Job Title")
     @FindBy(xpath = "//div[contains(@class,'v-eppplGeneralInfo__jobTitle false e3suiGeneralInfo-stylishTemplate__entryDescriptionItem')]")
     private PageElement jobTitle;
+
     @LogMessage("Job Location")
     @FindBy(xpath = "//div[@class='v-eppplGeneralInfo__jobLocation e3suiGeneralInfo-stylishTemplate__entryDescriptionItem']")
     private PageElement jobLocation;
+
     @LogMessage("Production Category")
     @FindBy(xpath = "//*[@id=\"rgn___epam_people_profile_v-eppplGeneralInfo\"]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/p[1]")
     private PageElement productionCategory;
+
     @LogMessage("job Function")
     @FindBy(xpath = "//*[@id=\"rgn___epam_people_profile_v-eppplGeneralInfo\"]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/p[1]")
     private PageElement jobFunction;
+
     @LogMessage("Primary Skill")
     @FindBy(xpath = "//*[@id=\"rgn___epam_people_profile_v-eppplGeneralInfo\"]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/p[1]")
     private PageElement primarySkill;
+
     @LogMessage("Popover button")
     @FindBy(xpath = "//*[@id=\"rgn___epam_people_profile_v-eppplGeneralInfo\"]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/h1[1]/span[2]")
     private PageElement popoverSign;
+
     @LogMessage("Native Name")
     @FindBy(xpath = "//div[@class='popover-content']/div[2]")
     private PageElement nativeName;
+
     @LogMessage("Past Projects Button")
     @FindBy(xpath = "//*[@data-id=\"~/epam/people/controls/profile/eppplGenericPersonalProfile-cv.wfep\"]")
     private PageElement pastProjectsButton;
+
     @LogMessage("Past Project View")
     @FindBy(xpath = "//li[@role=\"presentation\"][3]")
     private PageElement pastProjectsView;
@@ -119,9 +144,10 @@ public class ProfilePagePo extends AbstractPage {
         return profileView;
     }
 
-    public List<PageElement> getAllContactsButtonList() {
-        return allContactsButtonList;
+    public PageElement getAllContactsButton() {
+        return allContactsButton;
     }
+
 
     public PageElement getPhone() {
         return phone;
@@ -135,8 +161,8 @@ public class ProfilePagePo extends AbstractPage {
         return skype;
     }
 
-    public PageElement getEmail2() {
-        return email2;
+    public PageElement getSkypeForBusiness() {
+        return skypeForBusiness;
     }
 
     public PageElement getFirstAndLastName() {
@@ -170,14 +196,14 @@ public class ProfilePagePo extends AbstractPage {
     public PageElement getNativeName() {
         return nativeName;
     }
-    
+
     public PageElement getPastProjectsButton() {
         return pastProjectsButton;
     }
- 
+
     public PageElement getPastProjectsView() {
         return pastProjectsView;
-    }  
+    }
 
     public PageElement getCoverImage() {
         return coverImage;
@@ -185,6 +211,10 @@ public class ProfilePagePo extends AbstractPage {
 
     public PageElement getFeedbackButton() {
         return feedbackButton;
+    }
+
+    public PageElement getFeedbackCloseButton() {
+        return feedbackCloseButton;
     }
 
     public PageElement getTitleLabel() {

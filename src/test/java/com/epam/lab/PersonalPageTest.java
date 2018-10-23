@@ -10,12 +10,12 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.testng.ITestNGListener;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static com.epam.lab.core.util.Constants.CSV_PATH;
+import static com.epam.lab.core.util.Constants.CREDENTIALS_CSV_PATH;
 
 @Listeners({TestListener.class})
 public class PersonalPageTest implements ITestNGListener {
@@ -24,24 +24,32 @@ public class PersonalPageTest implements ITestNGListener {
     private LoginPageBo loginPageBo;
     private User user;
 
-    @BeforeTest
+    @BeforeMethod
     @Description("Loading configurations before test")
     public void setup() {
-        user = CsvParser.createObjectsFromCsv(CSV_PATH);
+        user = CsvParser.createObjectsFromCredCsv(CREDENTIALS_CSV_PATH);
         loginPageBo = new LoginPageBo();
         loginPageBo.logIn(user.getLogin(), user.getPassword());
         personalPageBo = new PersonalPageBo();
     }
 
-    @Test(description = "Verify the functionality of Personal card....")
-    @Description("TrainingPageTest Description: Verify the functionality of Personal card....")
+    @Test(description = "Verify the functionality of Personal card with invalid data....")
+    @Description("PersonalPageTest Description: Verify the functionality of Personal card with invalid data....")
     @Severity(SeverityLevel.NORMAL)
-    public void verifyTrainingCard() {
+    public void verifyPersonalCardWithValidData() {
         personalPageBo.verifyCardByGeneralInfo();
-        personalPageBo.verifyDeletingEmergencyContacts();
+        personalPageBo.verifyCardByInvalidEmergencyContacts();
     }
 
-    @AfterTest
+    @Test(description = "Verify the functionality of Personal card with valid data....")
+    @Description("PersonalPageTest Description: Verify the functionality of Personal card with valid data....")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyTrainingCardWithInvalidData() {
+        personalPageBo.verifyCardByGeneralInfo();
+        personalPageBo.verifyCardByValidEmergencyContacts();
+    }
+
+    @AfterMethod
     @Description("Exit from program")
     public void quit() {
         DriverManager.removeDriver();

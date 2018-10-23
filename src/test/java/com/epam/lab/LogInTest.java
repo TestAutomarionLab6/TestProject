@@ -28,7 +28,7 @@ public class LogInTest implements ITestNGListener {
     @BeforeTest
     @Description("Loading configurations before test")
     public void setup() {
-        user = CsvParser.createObjectsFromCsv(CSV_PATH);
+        user = CsvParser.createObjectsFromCredCsv(CREDENTIALS_CSV_PATH);
         loginPageBo = new LoginPageBo();
         homePageBo = new HomePageBo();
     }

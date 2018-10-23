@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 public class HomePagePo extends AbstractPage {
 
     @LogMessage("dropDownMenu")
-    @FindBy(xpath = "//div[starts-with(@class, 'UserMenu')]/div[starts-with(@class,'DropDownMenu')]/div[starts-with(@class,'DropDownMenu')]/div[starts-with(@class,'DropDownMenu')]")
+    @FindBy(xpath = "(//*[@class='DropDownMenu---index---angle---2M5f1 fa fa-angle-down'])[2]")
     private PageElement dropDownMenu;
     @LogMessage("logout")
-    @FindBy(xpath = "//div[starts-with(@class,'DropDownMenu')]/div[starts-with(@class,'UserMenu')]/a[@class and @href]")
+    @FindBy(xpath = "//*[starts-with(@class,'UserMenu---index---logout')]")
     private PageElement logout;
 
     public PageElement getDropDownMenu() {

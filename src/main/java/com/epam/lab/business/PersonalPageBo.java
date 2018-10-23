@@ -1,14 +1,11 @@
 package com.epam.lab.business;
 
 import com.epam.lab.core.driver.DriverManager;
-import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.MyLogger;
 import com.epam.lab.page.PersonalPagePo;
 import io.qameta.allure.Step;
 import org.apache.log4j.Level;
 import org.testng.asserts.SoftAssert;
-
-import java.util.List;
 
 import static com.epam.lab.core.util.Constants.*;
 
@@ -67,6 +64,20 @@ public class PersonalPageBo {
         softAssertion.assertAll();
     }
 
+    @Step("PageElementBO Step: Verify the functionality of Personal card by valid emergency contacts....")
+    public void verifyCardByValidEmergencyContacts() {
+        clickOnEmergencyContacts();
+        verifyEmergencyContacts();
+        initialNumberRows = calcInitialNumberRows();
+        inputFirstName(VALID_NAME_EMERGENCY_CONTACT);
+        inputRelationship(VALID_RELATIONSHIP_EMERGENCY_CONTACT);
+        inputPhone(VALID_PHOME_EMERGENCY_CONTACT);
+        clickOnAdd();
+        newInitialNumberRows = calcInitialNumberRows();
+        verifyContactTable();
+        verifyDeletingEmergencyContacts();
+    }
+
     @Step("PageElementBO Step: Verify the functionality of Personal card by invalid emergency contacts....")
     public void verifyCardByInvalidEmergencyContacts() {
         clickOnEmergencyContacts();
@@ -78,6 +89,7 @@ public class PersonalPageBo {
         clickOnAdd();
         newInitialNumberRows = calcInitialNumberRows();
         verifyContactTable();
+        verifyDeletingEmergencyContacts();
     }
 
     @Step("PageElementBO Step: Click on 'Emergency Contacts' button...")

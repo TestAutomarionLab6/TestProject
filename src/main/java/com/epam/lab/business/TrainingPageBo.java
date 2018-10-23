@@ -25,13 +25,10 @@ public class TrainingPageBo {
 
     @Step("PageElementBO Step: Verify the functionality of Professional Training card by year....")
     public void verifyCardByYear() {
-        clickOnProfessionGrowth();
-        clickOnTrainingCard();
-        clickOnSeeMore();
         clickOnByYear();
         verifyByYear();
     }
-  
+
     @Step("PageElementBO Step: Verify the functionality of Professional Training card by type....")
     public void verifyCardByType() {
         clickOnProfessionGrowth();
@@ -65,8 +62,13 @@ public class TrainingPageBo {
     public void verifyByYear() {
         String expectedClassname = START_CLASSNAME_PROFILE_PAGE.concat(TRAINING_BY_YEAR_CLASSNAME);
         String currentlyClassname = trainingPagePo.getByYearButton().getAttribute("class");
+        SoftAssert softAssertion = new SoftAssert();
+        softAssertion.assertEquals(currentlyClassname, expectedClassname, "The information is not displayed");
+        MyLogger.getLogger().info(currentlyClassname.equals(expectedClassname) ?
+                "All training information has been successfully loaded" : "The information is not displayed on page");
+        softAssertion.assertAll();
     }
-  
+
     @Step("PageElementBO Step: Click on 'By type' button...")
     public void clickOnByType() {
         trainingPagePo.getByTypeButton().waitUntilVisible().click();
