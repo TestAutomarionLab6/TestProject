@@ -183,6 +183,13 @@ public class ProfilePageBo {
        profilePagePo.getAllContactsButton().click();
     }
 
+    @Step("PageElementBO Step: Check the user mobile phone")
+    public void verifyPersonalMobilePhone(String phone) {
+        softAssertion.assertEquals(phone, profilePagePo.getMobilePhone().getText(), "Phone number is't correct");
+        MyLogger.getLogger().info(phone.equals(profilePagePo.getMobilePhone().getText()) ?
+                "mobile phone number is correct" : "mobile phone number is't correct");
+    }
+
     @Step("PageElementBO Step: Check the user phone")
     public void verifyPersonalPhoneNumber(String phone) {
         softAssertion.assertEquals(phone, profilePagePo.getPhone().getText(), "Phone number is't correct");

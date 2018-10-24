@@ -5,6 +5,8 @@ import com.opencsv.bean.CsvBindByName;
 public class UserData {
 
     @CsvBindByName
+    private String mobilePhone;
+    @CsvBindByName
     private String phone;
     @CsvBindByName
     private String email;
@@ -26,6 +28,14 @@ public class UserData {
     private String primarySkill;
     @CsvBindByName
     private String nativeName;
+
+    public String getMobilePhone() {
+        return mobilePhone;
+    }
+
+    public void setMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
+    }
 
     public String getPhone() {
         return phone;

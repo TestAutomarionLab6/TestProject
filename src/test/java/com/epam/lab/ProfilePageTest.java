@@ -104,6 +104,7 @@ public class ProfilePageTest implements ITestNGListener {
     @Severity(SeverityLevel.NORMAL)
     public void verifyPersonalContacts() {
         profilePageBo.clickOnContacts();
+        profilePageBo.verifyPersonalMobilePhone(userData.getMobilePhone());
         profilePageBo.verifyPersonalPhoneNumber(userData.getPhone());
         profilePageBo.verifyPersonalEmail(userData.getEmail());
         profilePageBo.verifyPersonalSkype(userData.getSkype());
