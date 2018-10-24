@@ -2,19 +2,14 @@ package com.epam.lab.page;
 
 import com.epam.lab.core.pageElement.PageElement;
 import com.epam.lab.core.util.LogMessage;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.List;
 
 import static com.epam.lab.core.util.Constants.START_CLASSNAME_PROFILE_PAGE;
 
 public class ProfilePagePo extends AbstractPage {
 
     @LogMessage("Cover image")
-    @FindBy(xpath = "//*[@class=\"" + START_CLASSNAME_PROFILE_PAGE +
-            "LocationCoverImage__imageBlock_image " + START_CLASSNAME_PROFILE_PAGE +
-            "LocationCoverImage__imageBlock_image-loaded\"]")
+    @FindBy(xpath = "(//div[starts-with(@class,\"CoverImage---index---imageBlock\")])[1]")
     private PageElement coverImage;
 
     @LogMessage("Feedback button")
@@ -60,20 +55,24 @@ public class ProfilePagePo extends AbstractPage {
     @FindBy(xpath = "//*[@class='v-eppplGeneralInfo__personContactsDesktop']")
     private PageElement allContactsButton;
 
-    @LogMessage("Phone")
+    @LogMessage("Mobile phone")
     @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[1]")
+    private PageElement mobilePhone;
+
+    @LogMessage("Phone")
+    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[2]")
     private PageElement phone;
 
     @LogMessage("Email")
-    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[2]")
+    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[3]")
     private PageElement email;
 
     @LogMessage("Skype")
-    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[3]")
+    @FindBy(xpath = "(//*[starts-with(@class,'PersonContactsPopover---index---item---')]/span[2])[4]")
     private PageElement skype;
 
     @LogMessage("Skype for business")
-    @FindBy(xpath = "(//*[starts-with(@class,\"PersonContactsPopover---index---item---\")]/span[2])[4]")
+    @FindBy(xpath = "(//*[starts-with(@class,\"PersonContactsPopover---index---item---\")]/span[2])[5]")
     private PageElement skypeForBusiness;
 
     @LogMessage("First And LastName")
@@ -221,4 +220,7 @@ public class ProfilePagePo extends AbstractPage {
         return titleLabel;
     }
 
+    public PageElement getMobilePhone() {
+        return mobilePhone;
+    }
 }
